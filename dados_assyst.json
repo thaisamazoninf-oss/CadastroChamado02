@@ -1,0 +1,580 @@
+{
+  "tipos": {
+    "A": {
+      "perfil": "Advogado(a) de São Paulo"
+    },
+    "AE": {
+      "perfil": "Advogado(a)",
+      "Estado": "Fora de SP"
+    },
+    "S": {
+      "perfil": "Servidor(a)"
+    },
+    "E": {
+      "perfil": "Sr(a)"
+    },
+    "Q": {
+      "perfil": "Usuário não idenficado"
+    }
+  },
+  
+  "assuntos": {
+    "1": {
+      "titulo": "PJe - Indisponível",
+      "resumo": "PJe - Indisponível",
+      "conteudo": " entrou em contato informando que está enfrentando dificuldades para acessar o sistema PJe via PDPJ, relatando que o mesmo aparenta estar fora do ar.\nMensagem de erro:",
+      "categoria": "Indisponibilidade",
+      "item": "Pje ",
+      "resol": " "
+      
+    },
+    "2": {
+      "titulo": "PJeOffice Pro - Configuração",
+      "resumo": "PJeOffice Pro - Configuração",
+      "conteudo": " entra em contato solicita orientações sobre a configuração do certificado digital no PjeOfficePro",
+      "categoria": "Configuração",
+      "item": "PJeOffice Pro (Serviço)",
+      "resol":"foi feito o acesso remoto e realizado a configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu acessar normalmente."
+    },
+    "3": {
+      "titulo": "PJe - Erro ao assinar",
+      "resumo": "PJe - Erro ao assinar",
+      "conteudo": " informa que não está conseguindo assinar no PJe via PDPJ com seu certificado.\n\nOcorre no 1º grau e 2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
+      "categoria": "Erro ou Falha (Moderada)",
+      "item": "Pje ",
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
+    },
+    "4": {
+      "titulo": "PJe - Questionamento",
+      "resumo": "PJe - Questionamento Técnico",
+      "conteudo": " questiona sobre ocorrido, pois\n\nNavegador utilizado: Firefox e Google Chrome",
+      "categoria": "ques",
+      "item": "Pje ",
+      "resol": ""
+    },
+    "5": {
+      "titulo": "Certificado Digital - Configuração",
+      "resumo": "Certificado Digital - Configuração",
+      "conteudo": " solicita orientação/acesso remoto para configuração do certificado digital: ePass2003/SafeNet/SafeSign.\n\n",
+      "categoria": "Configuração",
+      "item": "Certificado Digital",
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a configuração do certificado digital. Testes realizados com sucesso."
+    },
+    "6": {
+      "titulo": "Computador - Não liga",
+      "resumo": "Computador - Não liga",
+      "conteudo": " solicita a verificação do computador/notebook corporativo, pois máquina não está ligando.\nO(A) servidor(a) realizou a verificação dos cabos de rede e de alimentação elétrica, informando que não foram constatadas irregularidades.\n\n",
+      "categoria": "Não Liga",
+      "item": "Computador"
+    },
+    "7": {
+      "titulo": "Queda de ligação",
+      "resumo": "Queda de Ligação (chamada improdutiva)",
+      "conteudo": "Queda de Ligação (chamada improdutiva)",
+      "item": "Queda",
+      "categoria": "por"
+    },
+    "8": {
+      "titulo": "Cobrança de Evento",
+      "resumo": " Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️",
+      "conteudo": "Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️",
+      "categoria": "por",
+      "item": "Cobrança",
+      "resol": "Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️"
+    },
+    "9": {
+      "titulo": "Chamado de Audiência",
+      "resumo": "Audiência | Sessão | Conciliação",
+      "conteudo": " informa que não está conseguindo acessar a aplicação Zoom, pois está apresentando problemas.\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "categoria": "erro",
+      "item": "Audiência | Sessão | ",
+      "resol": ""
+    },
+    "10": {
+      "titulo": "VPN - Instalação",
+      "resumo": "VPN - Instalação",
+      "conteudo": " solicita instalação do programa: VPN Global.\n\n",
+      "categoria": "ins",
+      "item": "VPN",
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação da VPN Global. Testes realizados com sucesso."
+    },
+    "11": {
+      "titulo": "Ramal - Não funciona",
+      "resumo": "Ramal - Não está recebendo chamadas",
+      "conteudo": " solicita verificação do ramal:XXXX que não está funcionando para captura de chamados.\n\nTombo do telefone: \n\n",
+      "categoria": "Ramal não fun",
+      "item": "Ramal",
+      "resol":"Atribuir  SART para verificação"
+    },
+    "12": {
+      "titulo": "PJe - Acessar com login e senha",
+      "resumo": "PJe - Cadastro de Senha",
+      "conteudo": " solicita auxílio para acessar o PJE com usuário e senha.",
+      "categoria": "Configuração",
+      "item": "Pje ",
+      "resol":"Foi orientado acessar o PJe com ceritficado digital, clicar em PAINEL ANTIGO -> Configuração -> pessoa -> cadastro de senha.\nPJE - Permitir o acesso utilizando login e senha SIM e redefinir a mesma atendendo os quesitos solicitados"
+    },
+    "13": {
+      "titulo": "PJe - Consulta Andamento Processual",
+      "resumo": "Consulta Andamento Processual - Questionamento Técnico",
+      "conteudo": " solicita auxílio para consultar sobre andamento processual a qual o(a) mesmo(a) é parte.\n\nN.º do processo: \n\n XXª - Vara trabalhista. ",
+      "categoria": "Questioname",
+      "item": "Consulta Andamento Processual (Serviço)",
+      "resol":"Orientado(a) a verificar andamento processual com a XXª Vara Trabalhista através do número: "
+    },
+
+    "14": {
+      "titulo": "Balcão Virtual - Atendimento",
+      "resumo": "PJe - Atendimento Balcão Virtual",
+      "conteudo": " solicita auxílio para consultar sobre andamento processual a qual o(a) mesmo(a) é parte.\n\nN.º do processo: \n\n XXª - Vara trabalhista. ",
+      "categoria": "Atendimento via",
+      "item": "Pje ",
+      "resol":" Orientamos entrar em contato com o Balcão Virtual (Portal do TRT2 > Contato > Balcão Virtual) nas próximas 48 horas úteis, informar o número de chamado ao ser atendido pelo servidor da CIAO (Unidade de Apoio Operacional) para sanar sua dúvida/requisição/chamado. Caso não entre em contato nesse período, seu chamado será dado como resolvido pelos responsáveis."
+    },
+
+    "15": {
+      "titulo": "Google Drive (Desktop) - Sem Acesso",
+      "resumo": "Google Drive (Desktop) - Sem Acesso",
+      "conteudo": " solicita a verificação da máquina, pois não está aparecendo o Google Drive no seu computador.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Google Drive (Desktop) (Serviço)",
+      "resol":" foi feito o acesso remoto e realizado o acesso no Google Drive. Após procedimento, o mesmo conseguiu acessar normalmente."
+    },
+    "16": {
+      "titulo": "SISCONDJ - Erro de procedimento",
+      "resumo": "SISCONDJ - Erro de procedimento",
+      "conteudo": " solicita a verificação do sistema SISCONDJ, pois não consegue realizar o pagamento.\nImagens do ocorrido em anexo.\n\nN.º do processo: \n\n",
+      "categoria": "Erro ou Falha",
+      "item": "SISCONDJ (Serviço)",
+      "resol":"Orientado(a) a verificar andamento processual com a XXª Vara Trabalhista através do número: ",
+      "atribuir":"S. SUSTENT PJE-JT"
+    },
+    "17": {
+      "titulo": "PJe - Sem Acesso",
+      "resumo": "PJE - Sem acesso",
+      "conteudo": " informa que não está conseguindo acessar o PJe via PDPJ utilizando o certificado digital.\nOcorre no 1º grau e 2º grau.\nOcorre somente 1º 2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Pje (Serviço)",
+      "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PJeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente. "
+    },
+    "18": {
+      "titulo": "Intranet - Sem acesso",
+      "resumo": "Intranet - Sem acesso",
+      "conteudo": " informa que não está conseguindo acessar a Intranet.\n\nMensagem de erro:\n\nTestes em ligação:\n— Navegador utilizado: Mozilla.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Intranet",
+      "resol":" "
+    },
+    "19": {
+      "titulo": "Impressora - Não Imprime",
+      "resumo": "Impressora - Não Imprime",
+      "conteudo": " solicita a verificação da impressora, pois não está imprimindo.\nO(A) servidor(a) realizou a verificação dos cabos de rede e de alimentação elétrica, informando que não foram constatadas irregularidades.\n\nTombo da impressora:\n\n",
+      "categoria": "Não imprime",
+      "item": "Digitalização e "
+    },
+    "20": {
+      "titulo": "Malote Digital - Sem acesso",
+      "resumo": "Malote Digital - Sem acesso",
+      "conteudo": " informa que não está conseguindo acessar o Malote Digital.\n\nMensagem de erro:\n\nTestes em ligação:\n— Navegador utilizado: Mozilla.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Malote Digital (Serviço)",
+      "resol":" "
+    },
+    "21": {
+      "titulo": "Extensões navegador Firefox - Instalação",
+      "resumo": "Extensões navegador Firefox - Instalação",
+      "conteudo": " solicita orientação/para instalação da extensão: +PJe.\n\n",
+      "categoria": "Instalação",
+      "item": "Extensões navegador Firefox (Serviço)",
+      "resol":" "
+    },
+    "22": {
+      "titulo": "Ramal - Redirecionamento de ramal",
+      "resumo": "Ramal - Redirecionamento de ramal",
+      "conteudo": " entra em contato e solicita o redirecionamento do ramal XXXX para o telefone (XX)XXXX-XXXX/ramal:XXXX do(a) servidor(a) XXXXXXXXXX.\n\n",
+      "categoria": "Configuração/reconfiguração de encaminhamento de chamada",
+      "item": "Ramal",
+      "resol":" "
+    },
+    "23": {
+      "titulo": "SISCONDJ - Alteração de Usuário",
+      "resumo": "SISCONDJ - Alteração de Usuário",
+      "conteudo": " solicita alteração do e-mail para cadastro de conta bancária, pois o e-mail que consta está incorreto.\n\nO e-mail correto é:\n\n",
+      "categoria": "Alteração de Usuário",
+      "item": "SISCONDJ (Serviço)",
+      "resol":" "
+    },
+    "24": {
+      "titulo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
+      "resumo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
+      "conteudo": " entrou em contato informando que não consegue acessar o e-mail corporativo, pois não está recebendo o código de verificação em seu número: (xx)xxxxx-xxxx.\nE-mail: xxxxxxx@trt2.jus.br\n\nMensagem de erro:\n\n",
+      "categoria": "Sem Acesso",
+      "item": "TRTCloud - Gmail (Serviço)",
+      "resol":" "
+    },
+    "25": {
+      "titulo": "Computador - Lentidão",
+      "resumo": "Computador - Lentidão",
+      "conteudo": " solicita a verificação do computador/notebook corporativo, pois está apresentando lentidão para abrir programas e acessar sites do tribunal.\nO(A) servidor(a) realizou a verificação dos cabos de rede, informando que não foram constatadas irregularidades.\n\n",
+      "categoria": "Lentidão",
+      "item": "Computador"
+    },
+    "26": {
+      "titulo": "PJE - Erro ao anexar arquivos",
+      "resumo": "PJE - Erro ao anexar arquivos",
+      "conteudo": " informa que não está conseguindo anexar arquivos de mídias/PDF no PJe.\nN.º do processo: XXXXXXXXXXXXXXXXXX.\n\nMensagem de erro:\n\nTestes em ligação:\n— Navegador utilizado: Mozilla.\n— Solicitamos utilizar o otimizador de vídeos do PJe.\n— Renomear o arquivo para um nome mais curto.\n— Transformar em PDF-A.\n— Dividir arquivos.\n\n",
+      "categoria": "Erro ou Falha (Moderada)",
+      "item": "Pje (Serviço)",
+      "resol":" "
+    },
+    "27": {
+      "titulo": "Windows 11 - atualização",
+      "resumo": "Windows 11 - atualização",
+      "conteudo": " solicita atualização do Windows 11 na máquina corporativa.\n\n",
+      "categoria": "Instalação",
+      "item": "Windows 11 (Serviço)",
+      "resol":" "
+    },
+    "28": {
+      "titulo": "Cadastros de dados bancarios - Sem acesso",
+      "resumo": "Cadastros de dados bancarios - Sem acesso",
+      "conteudo": " informa que não está conseguindo acessar o cadastro de dados bancários do advogado.\n\nMensagem de erro:\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Cadastro de Dados Bancários de Advogados (Serviço)",
+      "resol":" "
+    },
+    "29": {
+      "titulo": "Acervo Digital - Erro Forbidden",
+      "resumo": "Acervo Digital - Erro Forbidden",
+      "conteudo": " informa que não está conseguindo acessar o acervo digital.\n\nMensagem de erro: Erro 404 Forbidden.\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "categoria": "Erro ou Falha",
+      "item": "Acervo Digital",
+      "resol":" "
+    },
+    "30": {
+      "titulo": "Intranet - Reset do autenticador",
+      "resumo": "Autenticador TRT2 - Intranet - Reset",
+      "conteudo": " entrou em contato solicitando o reset do autenticador TRT2 para acessar a Intranet, ao informar que trocou de celular e não possui mais o celular antigo.\nNecessita com urgência, ao precisar para acessar os sistemas do TRT2\n\n",
+      "categoria": "Reset/Desbloqueio Senha",
+      "item": "Autenticador TRT2 (Serviço)",
+      "resol":" "
+    },
+    "31": {
+      "titulo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
+      "resumo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
+      "conteudo": " entrou em contato solicitando o reset do autenticador da conta do E-mail corporativo, pois não possui mais acesso aos códigos.\n\n",
+      "categoria": "Reset/Desbloqueio Senha",
+      "item": "TRTCloud - Acesso à conta",
+      "resol":" "
+    },
+    "32": {
+      "titulo": "Monitor - Não liga",
+      "resumo": "Monitor - Não liga",
+      "conteudo": " solicita a verificação do monitor, pois máquina não está ligando.\n\n",
+      "categoria": "não",
+      "item": "Monitor"
+    },
+    
+    "33": {
+      "titulo": "Intranet - Reset/Desbloqueio da senha",
+      "resumo": "Senha Corporativa - Reset/Desbloqueio",
+      "conteudo": " solicita orientação para realizar o reset de senha da Intranet.\n\n",
+      "categoria": "Reset/Desbloqueio Senha",
+      "item": "Senha Corporativa (Serviço)"
+    },
+
+    "34": {
+      "titulo": "Corisco ChatJT - Google Chrome - Instalação",
+      "resumo": "Extensões navegador Google Chrome - Corisco ChatJT - Instalação",
+      "conteudo": " solicita instalação do programa da extensão do Google Chrome: Corisco ChatJT.\nAtravés da intranet\n\n",
+      "categoria": "Instalação",
+      "item": "Extensões navegador Google Chrome (Serviço)",
+      "resol": "Em contato com servidorx/magistradxfoi feito o acesso remoto e realizado a instalação da extensão Corisco ChatJT no Google Chrome."
+    },
+
+    "35": {
+      "titulo": "Sustentação Oral - 2º Grau (Serviço) - Reset/Desbloqueio Senha",
+      "resumo": "Sustentação Oral - 2º Grau (Serviço) - Reset/Desbloqueio Senha",
+      "conteudo": " informa que não está conseguindo acessar a Sustentação Oral 2º Grau e solicita excluir o cadastro para poder cadastrar novamente.\n\nMensagem de erro:\nOAB em anexo.\n\n",
+      "categoria": "Reset/Desbloqueio Senha",
+      "item": "Sustentação Oral - 2º Grau (Serviço)",
+      "resol":" "
+    },
+
+    "36": {
+      "titulo": "Certificado Digital - Instalação",
+      "resumo": "Certificado Digital - Instalação",
+      "conteudo": " solicita instalação do certificado digital: ePass2003/SafeNet/SafeSign.\n\n",
+      "categoria": "Instalação",
+      "item": "Certificado Digital",
+      "resol":"foi feito o acesso remoto e realizado a instalação do certificado digital. Testes realizados com sucesso."
+    },
+
+    "37": {
+      "titulo": "Certificado Digital - Reset/Desbloqueio de Token",
+      "resumo": "Certificado Digital - Reset/Desbloqueio de Token",
+      "conteudo": " solicita orientações sobre o desbloqueio do certificado digital: ePass2003/SafeNet/SafeSign.\nO(a) mesmo(a) informa que possui a senha PUK.\n\n",
+      "categoria": "Configuração",
+      "item": "Certificado Digital",
+      "resol":"foi feito o acesso remoto e realizado a instalação do certificado digital. Testes realizados com sucesso."
+    },
+    "38": {
+      "titulo": "SISCONDJ - Sem Acesso",
+      "resumo": "SISCONDJ - Sem Acesso",
+      "conteudo": " solicita a verificação do sistema SISCONDJ, pois não consegue acessar a tela para colocar a senha do certificado digital.\nImagens do ocorrido em anexo.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "SISCONDJ (Serviço)",
+      "resol":""
+    },
+
+    "39": {
+      "titulo": "SISCONDJ - Erro ao abrir aplicativo",
+      "resumo": "SISCONDJ - Erro ao abrir aplicativo",
+      "conteudo": " solicita a verificação do sistema SISCONDJ, pois não consegue abrir o aplicativo, ao digitar a senha do certificado solicita autenticação novamente.\nImagens do ocorrido em anexo.\nNovo certificado.\n\n",
+      "categoria": "Erro ou Falha",
+      "item": "SISCONDJ (Serviço)",
+      "resol":""
+    },
+
+    "40": {
+      "titulo": "PJe - Lentidão",
+      "resumo": "PJe - Lentidão",
+      "conteudo": " entrou em contato informando que está enfrentando dificuldades para acessar o sistema PJe via PDPJ, relatando que o mesmo aparenta lentidão no momento que tentar acessar.",
+      "categoria": "Lentidão",
+      "item": "Pje ",
+      "resol": " "
+    },
+    
+    "41": {
+      "titulo": "Ponto Eletrônico (Serviço) - Erro ao registrar",
+      "resumo": "Ponto Eletrônico (Serviço) - Erro ao registrar",
+      "conteudo": " entrou em contato informando que está enfrentando dificuldades para registrar o ponto eletrônico, relatando que ao clicar no botão nada acontece.\n Durante atendimento por ligação:\n - Navegador utilizado",
+      "categoria": "Erro ou Falha",
+      "item": "Ponto Eletrônico (Serviço)",
+      "resol": " "
+    },
+    
+    "42": {
+      "titulo": "Monitor - Solicitação de equipamento",
+      "resumo": "Monitor - Solicitação de equipamento",
+      "conteudo": " entrou em contato solicitando o monitor, para ser instalado\nSala\n\n",
+      "categoria": "Instalação",
+      "item": "Monitor",
+      "resol": " "
+    },
+    
+    "43": {
+      "titulo": "Computador - Solicitação de equipamento",
+      "resumo": "Computador - Solicitação de equipamento",
+      "conteudo": " entrou em contato solicitando o Computador, para ser instalado na sala:\n",
+      "categoria": "Instalação",
+      "item": "Computador",
+      "resol": " "
+    },
+    
+    "44": {
+      "titulo": "Notebook - Solicitação de equipamento",
+      "resumo": "Notebook - Solicitação de equipamento",
+      "conteudo": " entrou em contato solicitando o Computador, para ser instalado na sala:\n",
+      "categoria": "Instalação",
+      "item": "Notebook",
+      "resol": " "
+    },
+
+    "45": {
+      "titulo": "PJe - Login Via MFA - Dúvida de Negócio",
+      "resumo": "PJe - Login Via MFA - Dúvida de Negócio",
+      "conteudo": " entrou em contato solicitando orientação sobre como cadastrar o QR Code para autenticação no sistema do CNJ\n",
+      "categoria": "Dúvida de Negócio",
+      "item": "Pje",
+      "resol": " foi orientadx sobre a instalação do aplicativo autenticador no celular, além de enviar por e-mail o manual sobre o procedimento. Após procedimento, oa mesmx conseguiu acessar normalmente. "
+    },
+
+    "46": {
+      "titulo": "PJe -  Erro de código inválido – Autenticação CNJ",
+      "resumo": "PJe -  Erro de código inválido – Autenticação CNJ",
+      "conteudo": " entrou em contato informa que, ao tentar autenticar via QR Code, o sistema apresenta mensagem de código inválido.\n",
+      "categoria": "Erro ou Falha (Moderada)",
+      "item": "Pje",
+      "resol":""
+    },
+
+    "47": {
+      "titulo": "Zoom - Sem Acesso",
+      "resumo": "Zoom - Sem Acesso",
+      "conteudo": " informa que não está conseguindo acessar o Po Zoom , pois o código do autenticador google não é invalido, a mesma informa que trocou de celular.\n\nMensagem de erro:\nEmail da conta Zoom:\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Zoom (Serviço)",
+      "resol":" Encaminhar o  chamadado para DIVISÃO DE SUPORTE ESPECIALIZADO E MICROINFORMÁTICA"
+    },
+
+    "48": {
+      "titulo": "Chamado de Audiência - Sem acesso a pasta de audiência",
+      "resumo": "Audiência | Sessão | Conciliação - Sem Acesso a pasta de audiência",
+      "conteudo": " informa que não está conseguindo acessar as pastas da audiência.\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "item": "Audiência | Sessão | ",
+      "categoria": "Sem Acesso",
+      "resol": ""
+    },
+    "49": {
+      "titulo": "PJe - Alteração do e-mail",
+      "resumo": "PJe - Alteração do e-mail",
+      "conteudo": " entrou em contato solicitando atualização do e-mail no PJe 1º e 2º Grau.\nE-mail atualizado:\nNaturalidade:\nOAB em anexo.\n\n",
+      "item": "Pje (Serviço)",
+      "categoria": "Alteração de Usuário",
+      "resol": ""
+    },
+    "50": {
+      "titulo": "Extensões navegador Firefox - Erro na extensão +PJe",
+      "resumo": "Extensões navegador Firefox - Erro na extensão +PJe",
+      "conteudo": " solicita a verificação da extensão +PJe, tendo em vista que informou a ocorrência de falha em seu funcionamento.\n\n",
+      "item": "Extensões navegador Firefox (Serviço)",
+      "categoria": "Erro ou Falha",
+      "resol":" "
+
+    },
+
+    "51": {
+      "titulo": "Engano de chamada",
+      "resumo": "Engano (chamada improdutiva)",
+      "conteudo": "Engano (chamada improdutiva)",
+      "item": "Engano (chamada improdutiva)",
+      "categoria": "por"
+    },
+
+    "52": {
+      "titulo": "Consulta Andamento Processual - Indisponibilidade",
+      "resumo": "Consulta Andamento Processual - Indisponibilidade",
+      "conteudo": " entrou em contato informando que, ao tentar acessar a consulta processual, a página permanece em branco e não é carregada, impossibilitando a realização da consulta ao processo.",
+      "item": "Consulta Andamento Processual (Serviço)",
+      "categoria": "Indisponibilidade"
+    },
+
+    "53": {
+      "titulo": "SISCONDJ - Falha na Consulta Processual (Serviço WS)",
+      "resumo": "SISCONDJ - Falha na Consulta Processual (Serviço WS)",
+      "conteudo": " entrou em contato informando que não consegue realizar consultas no SISCONDJ, impossibilitando o acesso às informações do sistema.",
+      "item": "SISCONDJ (Serviço)",
+      "categoria": "Erro ou Falha"
+    },
+
+    "54": {
+      "titulo": "Computador - Falha na Migração de Dominio",
+      "resumo": "Computador - Falha na Migração de Dominio",
+      "conteudo": " entrou em contato informando que durante migração de dominio pareceu um erro.\nMensagem de erro:\n\n",
+      "item": "Computador",
+      "categoria": "Erro ou Falha"
+    },
+
+    "55": {
+      "titulo": "Computador - Implantação de novo dominio de rede",
+      "resumo": "Computador - Implantação de novo dominio de rede",
+      "conteudo": " entrou em contato informando que, ao ligar a máquina corporativa, foi exibida a mensagem ‘migração de domínio’, e solicitou esclarecimentos acerca do significado dessa mensagem.\n\n",
+      "item": "Computador",
+      "categoria": "Configuraçao"
+    },
+
+    "56": {
+      "titulo": "PROAD - Questionamento Técnico",
+      "resumo": "PROAD - Questionamento Técnico",
+      "conteudo": " entrou em contato solicitando orientações quanto ao procedimento para abertura de PROAD, tendo em vista possuir dúvidas acerca de sua realização.\n\n",
+      "item": "PROAD (Serviço)",
+      "categoria": "Questionamento Técnico"
+    },
+
+    "57": {
+      "titulo": "Computador - Sem Acesso",
+      "resumo": "Computador - Sem Acesso",
+      "conteudo": " solicita a verificação do computador corporativo, pois não está coseguindo acessar a máquina com sua credenciais.\nO(A) servidor(a) realizou a verificação dos cabos de rede, informando que não foram constatadas irregularidades.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Computador"
+    },
+
+    "58": {
+      "titulo": "Rede/Internet - Sem Acesso",
+      "resumo": "Rede/Internet - Sem Acesso",
+      "conteudo": " Solicita a verificação da conexão de internet no computador, pois informa que a máquina está apresentando falha ao se conectar à rede.\nO(A) servidor(a) realizou a verificação dos cabos de rede, informando que não foram constatadas irregularidades.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Rede/Internet"
+    },
+
+    "59": {
+      "titulo": "VPN - Erro na conexão",
+      "resumo": "VPN - Erro na conexão",
+      "conteudo": " Solicita a verificação da VPN Global, pois informa que não está conseguindo estabelecer conexão, sendo exibido erro durante a tentativa de acesso.\nMensagem de erro:\n\n",
+      "categoria": "Erro ou Falha",
+      "item": "VPN (Serviço)"
+    },
+
+    "60": {
+      "titulo": "Ligação muda",
+      "resumo": "Ligação muda (chamada improdutiva)",
+      "conteudo": "Ligação muda (chamada improdutiva)",
+      "item": "Ligação muda (chamada improdutiva)",
+      "categoria": "por"
+    },
+
+    "61": {
+      "titulo": "Imposto de Renda - Instalação",
+      "resumo": "Serviço não constante do Catálogo de Serviços - IRPF - Instalação",
+      "conteudo": "solicita instalação do programa: IRPF - Imposto de Renda Pessoa Física.\n\n",
+      "item": "Serviço não constante do Catálogo de Serviços",
+      "categoria": "Instalação"
+    },
+    "62": {
+      "titulo": "Impressora - Instalação",
+      "resumo": "Impressora - Instalação",
+      "conteudo": " solicita a instalação da impressora:\n\nTombo da impressora:\n\n",
+      "categoria": "Instalação",
+      "item": "Digitalização e "
+    },
+    "63": {
+      "titulo": "Scanner de Mesa -  instalação",
+      "resumo": "Scanner de Mesa - instalação",
+      "conteudo": " solicita a instalação do Scanner de Mesa:\n\nTombo do Scanner:\n\n",
+      "categoria": "Instalação",
+      "item": "Scanner de Mesa"
+    },
+    "64": {
+      "titulo": "Pje - Erro ao Peticionar",
+      "resumo": "PJe - Erro ao Peticionar",
+      "conteudo": " entra em contato informando que o sistema PJe está com muita lentidão para peticionar.\nAo final o sistema retorna a mensagem de que os documentos estão em assinatura, porém não prossegue.\nMensagem de erro: Erro de Permissão - ARQ-516\nOcorre no 1º e 2º grau.\n\nTeste realizados durante ligação:\nRealizada limpeza de Cookies e Cache.\nRealizado novo acesso com Certificado Digital.\nNavegador utilizado:\n\n",
+      "categoria": "Erro ou Falha (moderada)",
+      "item": "Pje (Serviço)"
+    },
+    "65": {
+      "titulo": "SISCONDJ - Sem acesso - certificado foi revogado",
+      "resumo": "SISCONDJ - Sem acesso - certificado foi revogado",
+      "conteudo": " informa que não está conseguindo acessar o SISCONDJ, pois está apresentando a mensagem: certificado foi revogado\n\n",
+      "categoria": "Sem acesso",
+      "item": "SISCONDJ (Serviço)",
+      "resol":" "
+    }, 
+    "66": {
+      "titulo": "PJE - CONFIGURAÇÃO DE MFA PARA SERVIDORES/MAGISTRADOS",
+      "resumo": "PJe - Configuração de Acesso QR",
+      "conteudo": " solicita orientações sobre como configurar o autenticador no  celular para acessar o PDPJ com o código.\n\nTestes durante ligação:\nNavegador utilizado:\nLimpeza de cache do navegador.\nRecadastramento do autenticador.\n\n",
+      "categoria": "Dúvida de Negócio",
+      "item": "Pje (Serviço)",
+      "resol":" "
+    }
+
+},
+
+  "modos": {
+    "presencial":{
+      "tituloModo": "Servidor(a) está presencial."
+    },
+    "teletrabalho":{
+      "tituloModo": "Servidor(a) está em teletrabalho."
+    }
+  },
+  "tipo_maquina": {
+    "Pessoal":{
+      "tituloMaquina": "Máquina Pessoal."
+    },
+    "Corporativa":{
+      "tituloMaquina": "Máquina Corporativa."
+    }
+  }
+}
