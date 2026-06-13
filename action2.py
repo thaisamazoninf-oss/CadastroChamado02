@@ -12,12 +12,16 @@ COORDS = {
     "adicionar_telefone": (889, 314),
     "clique_secao": (407, 428),
     #"Confirme_secao": (364, 452),
-    "selecionar_item": (842, 730)
+    #"selecionar_item": (842, 730)
 }
 
 
-
 cancelar = False
+
+def colar_texto(texto):
+    pyperclip.copy(texto)
+    pyautogui.hotkey("ctrl","v")
+    time.sleep(0.5)
 
 def parar():
     global cancelar
@@ -78,6 +82,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     resumo = assunto['resumo']
     categoria = assunto['categoria']
     perfil = tipos[tipo]['perfil']
+    
 
 #------------------- Número de contato ----------------------#
     if tipo in ["A", "AE", "S", "E"]:
@@ -85,6 +90,8 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         microsip = f"{contato}"
     else:
         microsip = "N/A"
+        
+# Formatação dos textos para descrição
 
     # Advogados e externos.
     texto = f"{perfil}{nome.strip().title()},{conteudo}\n" if tipo == "E" else f"{perfil}{conteudo}" 
@@ -162,10 +169,10 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         text3 = f"{maquina_titulo}\n\n{modo_titulo}\nLocal: {edificio} - {sala}\n\nContato: {microsip}\nRamal: {microsip}."
         
         #Servidor + Teletrabalho + computador pessoal   
-        text4 = f"{maquina_titulo}\n\n{modo_titulo}\nLotação: {edificio}(\n\nContato: {microsip}"
+        text4 = f"{maquina_titulo}\n\n{modo_titulo}\nLotação: {edificio}.\n\nContato: {microsip}"
         
         #Servidor + Teletrabalho + computador corporativo   
-        text5 = f"{maquina_titulo}\nTombo: {tombo}\n\n{modo_titulo}\nLotação: {edificio}\n\nContato: {microsip}"
+        text5 = f"{maquina_titulo}\nTombo: {tombo}\n\n{modo_titulo}\nLotação: {edificio}.\n\nContato: {microsip}"
         time.sleep(3)
         
         #--------- Adicionando contato no Assyst -----------#
@@ -215,54 +222,67 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     if entrada_assunto in ["2","5", "6","7","9","10","11","15","16","17","18","19", "21","22","25","27","29","32","36","40","42","46","47","48","51","58","60","61","62","63","65","66"]:
         if tipo in ["A", "AE", "E"]:
             print("\nAdicionando descrição")
-            pyperclip.copy(texto)
-            pyautogui.hotkey("ctrl", "v")
+            colar_texto(texto)
+            #pyperclip.copy(texto)
+            #pyautogui.hotkey("ctrl", "v")
         
         #Usuário não identificado
         elif tipo == "Q":
             print("adicionando descrição")
-            pyperclip.copy(text6)
-            pyautogui.hotkey("ctrl","v")    
+            colar_texto(text6)
+            #pyperclip.copy(text6)
+            #pyautogui.hotkey("ctrl","v")    
             
         #Servidor + Presencial + computador corporativo
         elif tipo == "S" and modo_titulo == "Servidor(a) está presencial." and maquina_titulo == "Máquina Corporativa.":
             print("\nAdicionando descrição")
-            pyperclip.copy(texto)
-            pyautogui.hotkey("ctrl", "v")
-            pyperclip.copy(text2)
-            pyautogui.hotkey("ctrl", "v")
+            #pyperclip.copy(texto)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(texto)
+            #pyperclip.copy(text2)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(text2)
             
         #Servidor + Presencial + computador pessoal
         elif tipo == "S" and modo_titulo == "Servidor(a) está presencial." and maquina_titulo == "Máquina Pessoal.":
             print("\nAdicionando descrição")
-            pyperclip.copy(texto)
-            pyautogui.hotkey("ctrl", "v")
-            pyperclip.copy(text3)
-            pyautogui.hotkey("ctrl", "v")
+            #pyperclip.copy(texto)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(texto)
+            #pyperclip.copy(text3)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(text3)
         
         #Servidor + Teletrabalho + computador pessoal    
         elif tipo == "S"and modo_titulo == "Servidor(a) está em teletrabalho." and maquina_titulo == "Máquina Pessoal.":
             print("\nAdicionando descrição")
-            pyperclip.copy(texto)
-            pyautogui.hotkey("ctrl", "v")
-            pyperclip.copy(text4)
-            pyautogui.hotkey("ctrl", "v")
+            #pyperclip.copy(texto)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(texto)
+            #pyperclip.copy(text4)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(text4)
             
         #Servidor + Teletrabalho + computador corporativo    
         elif tipo == "S"and modo_titulo == "Servidor(a) está em teletrabalho." and maquina_titulo == "Máquina Corporativa.":
             print("\nAdicionando descrição")
-            pyperclip.copy(texto)
-            pyautogui.hotkey("ctrl", "v")
-            pyperclip.copy(text5)
-            pyautogui.hotkey("ctrl", "v")
+            #pyperclip.copy(texto)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(texto)
+            #pyperclip.copy(text5)
+            #pyautogui.hotkey("ctrl", "v")
+            colar_texto(text5)
+            
     elif entrada_assunto in ["8","60"]:
         print("adicionando descrição")
-        pyperclip.copy(text6)
-        pyautogui.hotkey("ctrl","v")    
+        #pyperclip.copy(text6)
+        #pyautogui.hotkey("ctrl","v")    
+        colar_texto(text6)
     else:
         print("\nAdicionando descrição")
-        pyperclip.copy(texto)
-        pyautogui.hotkey("ctrl", "v")
+        #pyperclip.copy(texto)
+        #pyautogui.hotkey("ctrl", "v")
+        colar_texto(texto)
     
     #-------------item-------------------# 
     # 2x TAb 
