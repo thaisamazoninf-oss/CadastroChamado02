@@ -18,6 +18,7 @@ COORDS = {
 
 cancelar = False
 
+####### Funções criadas ########
 #Função colar Texto. 
 def colar_texto(texto):
     pyperclip.copy(texto)
@@ -45,7 +46,9 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         print("Erro: perfil não selecionado.")
         return
 
-####### Formatação para adicionar no campo usuário ########
+################################################################
+
+    ####### Formatação para adicionar no campo usuário ########
     #if tipo == "S":
     if tipo in ["S","V"]:
         usuario_formatado = matricula.strip()
@@ -58,6 +61,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     elif tipo == "A":
         usuario_formatado = f"OAB:{oab.strip()}"
 
+    ####### Analisar Esse trecho ########
     if tipo == "A":
         try:
             pyautogui.alert("Clique em ok e depois selecione a OAB no site de consultas")
@@ -69,33 +73,35 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             usuario_formatado = infoOAB
         except:
             usuario_formatado = "Erro ao copiar OAB"
-
+    
+    ####### Modos de Entrada ########     
+    #Entrada de assuntos
     entrada_assunto = [k for k,v in assuntos.items() if v['titulo'] == assunto_titulo][0]
     assunto = assuntos[entrada_assunto]
+    
+    #Entrada de modo presencial ou teletrabalho
     entrada_modo = [k for k,v in modos.items() if v['tituloModo'] == modo_titulo][0]
+    
+    #Entrada de máquina corporativa ou pessoal.
     entrada_maquina = [k for k,v in maquinas.items() if v['tituloMaquina'] == maquina_titulo][0]
-    #modo = modos[entrada_modo]
-    #maquina = maquinas[entrada_maquina]
+
     if tipo != "S":
         modo_titulo = ""
         maquina_titulo = ""
-        #modo = {"tituloModo": ""}
-        #maquina = {"tituloMaquina": ""}
     conteudo = assunto['conteudo']
     resumo = assunto['resumo']
     categoria = assunto['categoria']
     perfil = tipos[tipo]['perfil']
     
 
-#------------------- Número de contato ----------------------#
-    if tipo in ["A", "AE", "S", "E"]:
+    ######## Número de contato ######## 
+    if tipo in ["A", "AE", "S","V", "E"]:
         print("\nNúmero de contato")
         microsip = f"{contato}"
     else:
         microsip = "N/A"
         
-# Formatação dos textos para descrição
-
+    ######## Formatação dos textos para descrição ########   
     # Advogados e externos.
     texto = f"{perfil}{nome.strip().title()},{conteudo}\n" if tipo == "E" else f"{perfil}{conteudo}" 
     
@@ -112,25 +118,16 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         time.sleep(3)
         
         pyautogui.press("down")
-        #pyautogui.click(*COORDS["selecionar_usuario_anonimo"])
         print("\nAdicionando informação em 5 segundos")
-        #clicar no nome para colar nome. 
-        #pyautogui.click(*COORDS["clicar_no_campo_nome"])
         pyautogui.press("enter")
         pyperclip.copy(usuario_formatado)
         time.sleep(3)
         pyautogui.hotkey("ctrl", "v")
         print("\nClique em ok")
-        #pyautogui.click(*COORDS["clique_ok"])
         pyautogui.press("tab")
         pyautogui.press("enter")
         time.sleep(4)
         pyautogui.press("tab")
-        """ 
-        for _ in range(2):
-            pyautogui.press("tab")
-            time.sleep(0.1)
-        """
         print("\nAdicinando telefone")
         pyperclip.copy(microsip)
         pyautogui.hotkey("ctrl", "v")
