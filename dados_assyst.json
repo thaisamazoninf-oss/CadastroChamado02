@@ -557,9 +557,33 @@
       "categoria": "Dúvida de Negócio",
       "item": "Pje (Serviço)",
       "resol":" "
+    },
+    "67": {
+      "titulo": "Computador - Questionamento Técnico",
+      "resumo": "Computador - Questionamento Técnico",
+      "conteudo": "  informa ''\n\n",
+      "categoria": "Questionamento Técnico",
+      "item": "Computador"
+    }, 
+    "68": {
+      "titulo": "PJe - Erro ao assinar - Erro de Documento Encriptado no PJe ",
+      "resumo": "PJe - Erro ao assinar",
+      "conteudo": " informa que está tentando protocolar no PJe via PDPJ. Ao informar que no momento da assinatura acontece erro.\n\nOcorre no 1º grau e 2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro: PJe-ASN-011::Ocorreu erro na preparação do documento para assinatura... Código:ASN-017 - Detalhe: Não foi possível configurar o documento PDF para ser assinado: O documento está encriptado e não pode ser processado pelo PJe.\n\nTestes em ligação:\nVersão do PJeOffice: atualizada\nNavegador utilizado:\nValidado o certificado digital",
+      "categoria": "Erro ou Falha (Moderada)",
+      "item": "Pje ",
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
+    },
+    "69": {
+      "titulo": "PJe - Erro ao anexar arquivo PJC",
+      "resumo": "PJe - Erro ao anexar arquivo PJC",
+      "conteudo": " informa dificuldade para juntar arquivo PJC no PJe. Relata que, ao salvar, o sistema permanece carregando indefinidamente, sem concluir a operação. Informa ainda que anexou os demais documentos, mas não conseguiu verificar se o arquivo PJC foi juntado aos autos, pois precisou atualizar o PJe devido ao mesmo comportamento de salvamento contínuo.\n\nOcorre no 1º grau e 2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro: PJe-ASN-011::Ocorreu erro na preparação do documento para assinatura... Código:ASN-017 - Detalhe: Não foi possível configurar o documento PDF para ser assinado: O documento está encriptado e não pode ser processado pelo PJe.\n\nTestes em ligação:\nVersão do PJeOffice: atualizada\nNavegador utilizado:\nValidado o certificado digital",
+      "categoria": "Erro ou Falha (Moderada)",
+      "item": "Pje (Serviço)",
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
     }
 
-},
+  },
+      
 
   "modos": {
     "presencial":{

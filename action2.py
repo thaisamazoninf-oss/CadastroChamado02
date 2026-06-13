@@ -3,18 +3,19 @@ import pyautogui
 import pyperclip
 import time
 
-#COORDS = (517,314)
 
 COORDS = {
     "campo_usuario" : (517,314),
-    "selecionar_usuario_anonimo": (593, 369),
-    "clicar_no_campo_nome": (899, 487),
-    "clique_ok": (970, 532),
+    #"selecionar_usuario_anonimo": (593, 369),
+    #"clicar_no_campo_nome": (899, 487),
+    #"clique_ok": (970, 532),
     "adicionar_telefone": (889, 314),
     "clique_secao": (407, 428),
-    "Confirme_secao": (364, 452),
+    #"Confirme_secao": (364, 452),
     "selecionar_item": (842, 730)
 }
+
+
 
 cancelar = False
 
@@ -91,7 +92,6 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     #texto para usuário não identificado
     text6 = f"{conteudo}"
     
-
     #texto item
     item = f"{assuntos[entrada_assunto]['item']}"
 
@@ -100,16 +100,20 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         print("\nClicando no campo usuário")
         pyautogui.rightClick(*COORDS["campo_usuario"])
         time.sleep(3)
-        pyautogui.click(*COORDS["selecionar_usuario_anonimo"])
+        
+        pyautogui.press("down")
+        #pyautogui.click(*COORDS["selecionar_usuario_anonimo"])
         print("\nAdicionando informação em 5 segundos")
-        time.sleep(5)
         #clicar no nome para colar nome. 
-        pyautogui.click(*COORDS["clicar_no_campo_nome"])
+        #pyautogui.click(*COORDS["clicar_no_campo_nome"])
+        pyautogui.press("enter")
         pyperclip.copy(usuario_formatado)
+        time.sleep(3)
         pyautogui.hotkey("ctrl", "v")
         print("\nClique em ok")
-        time.sleep(3)
-        pyautogui.click(*COORDS["clique_ok"])
+        #pyautogui.click(*COORDS["clique_ok"])
+        pyautogui.press("tab")
+        pyautogui.press("enter")
         time.sleep(4)
         pyautogui.press("tab")
         """ 
@@ -152,14 +156,18 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         #----------- Casos de copia de localização para servidor ---------------------------#
         
         #Servidor + Presencial + computador corporativo
-        text2 = f"{maquina_titulo}\nTombo: {tombo}\n\n{modo_titulo}\nLocal: {edificio} - {sala}\n\nContato: {microsip}\nRamal:XXXX."
+        text2 = f"{maquina_titulo}\nTombo: {tombo}\n\n{modo_titulo}\nLocal: {edificio} - {sala}\n\nContato: {microsip}\nRamal: {microsip}."
+        
         #Servidor + Presencial + computador pessoal
-        text3 = f"{maquina_titulo}\n\n{modo_titulo}\nLocal: {edificio} - {sala}\n\nContato: {microsip}\nRamal:XXXX."
+        text3 = f"{maquina_titulo}\n\n{modo_titulo}\nLocal: {edificio} - {sala}\n\nContato: {microsip}\nRamal: {microsip}."
+        
         #Servidor + Teletrabalho + computador pessoal   
-        text4 = f"{maquina_titulo}\n\n{modo_titulo}\n\nContato: {microsip}"
+        text4 = f"{maquina_titulo}\n\n{modo_titulo}\nLotação: {edificio}(\n\nContato: {microsip}"
+        
         #Servidor + Teletrabalho + computador corporativo   
-        text5 = f"{maquina_titulo}\nTombo: {tombo}\n\n{modo_titulo}\n\nContato: {microsip}"
+        text5 = f"{maquina_titulo}\nTombo: {tombo}\n\n{modo_titulo}\nLotação: {edificio}\n\nContato: {microsip}"
         time.sleep(3)
+        
         #--------- Adicionando contato no Assyst -----------#
         pyautogui.click(*COORDS["adicionar_telefone"])
         print("\nAdicinando telefone")
@@ -184,7 +192,9 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             print("\nAdicionando no Jurisdicionado")
             time.sleep(3)
         
-        pyautogui.click(*COORDS["Confirme_secao"])
+        #pyautogui.click(*COORDS["Confirme_secao"])
+        pyautogui.press("down")
+        pyautogui.press("enter")
 
     tabs = 4 if tipo in ["A", "AE", "E"] else 7
     for _ in range(tabs):
@@ -268,7 +278,6 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     #clica em "opção de item"
     print("\nclica no item")
     time.sleep(2)
-    #pyautogui.click(*COORDS["selecionar_item"])
     pyautogui.press("down")
     time.sleep(0.3)
     pyautogui.press('enter')
@@ -291,7 +300,6 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         pyautogui.press("down")
         time.sleep(0.3)
         pyautogui.press('enter')
-        #pyautogui.click(x=725, y=798)
         time.sleep(3)
 
         pyautogui.press("tab")
@@ -301,7 +309,6 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         
 #-------------------Preenchimento Categoria --------------------------#
     
-    #pyautogui.click(x=393, y=667)
     if tipo != "S":
         #2x TAb 
         for _ in range(3):
@@ -315,7 +322,6 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     pyautogui.hotkey("ctrl", "v")
     print("\nclica na categoria")
     time.sleep(2)
-    #pyautogui.click(x=396, y=693)
     pyautogui.press("down")
     time.sleep(0.3)
     pyautogui.press('enter')
@@ -357,25 +363,3 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         pyautogui.press("tab")
         pyperclip.copy(oab.strip())
         pyautogui.hotkey("ctrl", "v")
-"""
-        time.sleep(2)
-        pyautogui.moveTo(x=1267, y=598, duration=0.5)
-        pyautogui.scroll(950)
-        print("concluido com sucesso!")
-    else:
-        time.sleep(2)
-        pyautogui.moveTo(x=1267, y=598, duration=0.5)
-        pyautogui.scroll(950)
-
-    print("\nPerfil:", perfil)
-    print("Nome:", nome)
-    if tipo in ["A", "AE"]:
-        print("OAB:", oab)
-        print("CPF:", cpf)
-        print("E-mail:", email)
-    elif tipo == "S":
-        print("Matricula:", matricula)
-    print("Assunto:", entrada_assunto, ":", resumo)
-    print("concluido com sucesso!")
-
-"""        
