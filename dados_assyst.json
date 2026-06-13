@@ -10,6 +10,9 @@
     "S": {
       "perfil": "Servidor(a)"
     },
+    "V": {
+      "perfil": "Vossa Excelência"
+    },
     "E": {
       "perfil": "Sr(a)"
     },
@@ -584,7 +587,6 @@
 
   },
       
-
   "modos": {
     "presencial":{
       "tituloModo": "Servidor(a) está presencial."
@@ -593,6 +595,8 @@
       "tituloModo": "Servidor(a) está em teletrabalho."
     }
   },
+
+
   "tipo_maquina": {
     "Pessoal":{
       "tituloMaquina": "Máquina Pessoal."

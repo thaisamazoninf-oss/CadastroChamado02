@@ -6,11 +6,11 @@ import time
 
 COORDS = {
     "campo_usuario" : (517,314),
+    "adicionar_telefone": (889, 314),
+    "clique_secao": (407, 428),
     #"selecionar_usuario_anonimo": (593, 369),
     #"clicar_no_campo_nome": (899, 487),
     #"clique_ok": (970, 532),
-    "adicionar_telefone": (889, 314),
-    "clique_secao": (407, 428),
     #"Confirme_secao": (364, 452),
     #"selecionar_item": (842, 730)
 }
@@ -18,6 +18,7 @@ COORDS = {
 
 cancelar = False
 
+#Função colar Texto. 
 def colar_texto(texto):
     pyperclip.copy(texto)
     pyautogui.hotkey("ctrl","v")
@@ -44,7 +45,9 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         print("Erro: perfil não selecionado.")
         return
 
-    if tipo == "S":
+####### Formatação para adicionar no campo usuário ########
+    #if tipo == "S":
+    if tipo in ["S","V"]:
         usuario_formatado = matricula.strip()
     elif tipo == "AE":
         usuario_formatado = f"{nome.strip().upper()} OAB {estado.strip().upper()} nº:{oab.strip()} - D"
