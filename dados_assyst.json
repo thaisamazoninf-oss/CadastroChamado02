@@ -96,7 +96,7 @@
     "10": {
       "titulo": "VPN - Instalação",
       "resumo": "VPN - Instalação",
-      "conteudo": " solicita instalação do programa: VPN Global.\n\n",
+      "conteudo": ", solicita instalação da VPN Global.\n\n",
       "categoria": "ins",
       "item": "VPN",
       "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação da VPN Global. Testes realizados com sucesso."
@@ -155,7 +155,7 @@
     "17": {
       "titulo": "PJe - Sem Acesso",
       "resumo": "PJE - Sem acesso",
-      "conteudo": " informa que não está conseguindo acessar o PJe via PDPJ utilizando o certificado digital.\nOcorre no 1º grau e 2º grau.\nOcorre somente 1º 2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "conteudo": ", relata não conseguir acessar o sistema PJe por meio da Plataforma Digital do Poder Judiciário (PDPJ) utilizando certificado digital. O problema ocorre nos ambientes de 1º Grau e 2º Grau, impossibilitando a autenticação e o acesso ao sistema.\nOcorre somente 1º 2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
       "categoria": "Sem Acesso",
       "item": "Pje (Serviço)",
       "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PJeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente. "
