@@ -50,7 +50,7 @@
     "4": {
       "titulo": "PJe - Questionamento",
       "resumo": "PJe - Questionamento Técnico",
-      "conteudo": " questiona sobre ocorrido, pois\n\nNavegador utilizado: Firefox e Google Chrome",
+      "conteudo": ", questiona sobre ocorrido, pois\n\nNavegador utilizado: Firefox e Google Chrome",
       "categoria": "ques",
       "item": "Pje ",
       "resol": ""
@@ -58,7 +58,7 @@
     "5": {
       "titulo": "Certificado Digital - Configuração",
       "resumo": "Certificado Digital - Configuração",
-      "conteudo": " solicita orientação/acesso remoto para configuração do certificado digital: ePass2003/SafeNet/SafeSign.\n\n",
+      "conteudo": ", solicita orientação/acesso remoto para configuração do certificado digital: ePass2003/SafeNet/SafeSign.\n\n",
       "categoria": "Configuração",
       "item": "Certificado Digital",
       "resol":"foi feito o/a orientação/acesso remoto e realizado a configuração do certificado digital. Testes realizados com sucesso."
@@ -583,6 +583,15 @@
       "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje (Serviço)",
       "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
+    },
+
+    "70": {
+      "titulo": "Chamado de Audiência - Computador não liga",
+      "resumo": "Audiência | Sessão | Conciliação - Computador não liga",
+      "conteudo": " solicita a verificação do computador/notebook corporativo, pois máquina não está ligando.\nO(A) servidor(a) realizou a verificação dos cabos de rede e de alimentação elétrica, informando que não foram constatadas irregularidades.\n\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "categoria": "Erro ou Falha",
+      "item": "Audiência | Sessão | ",
+      "resol": ""
     }
 
   },

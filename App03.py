@@ -241,7 +241,7 @@ class Aplicacao:
             # Remove os assuntos que não quer mostrar para Advogados  e publico em geral.
             remover = ["Computador - Não liga", "Zoom - Sem acesso","Queda de ligação", "Audiência - Zoom - Sem acesso","VPN - instalação", "Ramal - Não funciona", "TrtCloud Drive - Sem Acesso","SISCONDJ - Erro de procedimento","VPN - Instalação","Ramal - Não está recebendo chamadas", "Chamado de Audiência","Intranet - Sem acesso", "Impressora - Não Imprime", "Malote Digital - Sem acesso", "Mozilla Firefox - Instalação de Extensão", "Ramal - Redirecionamento de ramal", "TrtCloud Gmail - Sem Acesso Codigo segurança", "Computador - Lentidão", "Windows 11 - atualização", "Autenticador TRT2 - Intranet - Reset", "Certificado Digital - Instalação", "Certificado Digital - Reset/Desbloqueio de Token", "Computador - Solicitação de equipamento", "Corisco ChatJT - Instalação", "Intranet - Reset/Desbloqueio", "Monitor - Não liga", "Monitor - Solicitação de equipamento", "Notebook - Solicitação de equipamento", "Ponto Eletrônico (Serviço) - Erro ao registrar", "TrtCloud Drive - Sem Acesso", "TrtCloud Gmail - Reset/Desbloqueio Senha","Engano de chamada","Chamado de Audiência - Sem acesso a pasta de audiência","Computador - Falha na Migração de Dominio","Computador - Implantação de novo dominio de rede" ]
             assuntos_filtrados = [a for a in assuntos_filtrados if a not in remover]
-        elif tipo in ["S"]:
+        elif tipo in ["S","V"]:
             # Remove os assuntos que não quer mostrar para S
             remover = ["Queda de ligação","Engano de chamada"]
             assuntos_filtrados = [a for a in assuntos_filtrados if a not in remover]
@@ -267,7 +267,7 @@ class Aplicacao:
             self.frame_campos.pack(fill='x', padx=20, pady=10)
         
         # Mostrar ou ocultar os campos "Modo" e "Tombo" conforme o tipo
-        if tipo == "S":
+        if tipo in ["S","V"]:
             self.modo_frame.pack(fill='x', padx=20, pady=10)
             self.maquina_frame.pack(fill='x', padx=20, pady=10)
             self.tombo_frame.pack(fill='x', padx=20, pady=10)
@@ -306,7 +306,7 @@ class Aplicacao:
             elif campo == "Nome completo:" and tipo in ["E", "AE"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
-            elif campo == "Contato:" and tipo in ["A","E", "AE","S"]:
+            elif campo == "Contato:" and tipo in ["A","E", "AE","S","V"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
             elif campo == "Estado (UF):" and tipo == "AE":
@@ -315,7 +315,7 @@ class Aplicacao:
             elif campo == "CPF:" and tipo in ["A", "E", "AE"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
-            elif campo == "Matrícula:" and tipo == "S":
+            elif campo == "Matrícula:" and tipo in ["S","V"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
 

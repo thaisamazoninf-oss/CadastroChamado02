@@ -85,7 +85,8 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     #Entrada de máquina corporativa ou pessoal.
     entrada_maquina = [k for k,v in maquinas.items() if v['tituloMaquina'] == maquina_titulo][0]
 
-    if tipo != "S":
+    #if tipo != "S":
+    if tipo not in ["S","V"]:
         modo_titulo = ""
         maquina_titulo = ""
     conteudo = assunto['conteudo']
@@ -141,7 +142,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         time.sleep(0.9)
         pyautogui.press("tab")
 
-    if tipo == "S":
+    if tipo in ["S","V"]:
         for _ in range(5):
             pyautogui.press("tab")
             time.sleep(0.1)
@@ -219,7 +220,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
 
 #------------------ Adicionando Descrição ---------------------#
 
-    if entrada_assunto in ["2","5", "6","7","9","10","11","15","16","17","18","19", "21","22","25","27","29","32","36","40","42","46","47","48","51","58","60","61","62","63","65","66"]:
+    if entrada_assunto in ["2","5", "6","7","9","10","11","15","16","17","18","19", "21","22","25","27","29","32","36","40","42","46","47","48","51","58","60","61","62","63","65","66","70"]:
         if tipo in ["A", "AE", "E"]:
             print("\nAdicionando descrição")
             colar_texto(texto)
@@ -234,7 +235,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             #pyautogui.hotkey("ctrl","v")    
             
         #Servidor + Presencial + computador corporativo
-        elif tipo == "S" and modo_titulo == "Servidor(a) está presencial." and maquina_titulo == "Máquina Corporativa.":
+        elif tipo in ["S", "V"] and modo_titulo == "Servidor(a) está presencial." and maquina_titulo == "Máquina Corporativa.":
             print("\nAdicionando descrição")
             #pyperclip.copy(texto)
             #pyautogui.hotkey("ctrl", "v")
@@ -244,7 +245,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             colar_texto(text2)
             
         #Servidor + Presencial + computador pessoal
-        elif tipo == "S" and modo_titulo == "Servidor(a) está presencial." and maquina_titulo == "Máquina Pessoal.":
+        elif tipo in ["S","V"] and modo_titulo == "Servidor(a) está presencial." and maquina_titulo == "Máquina Pessoal.":
             print("\nAdicionando descrição")
             #pyperclip.copy(texto)
             #pyautogui.hotkey("ctrl", "v")
@@ -254,7 +255,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             colar_texto(text3)
         
         #Servidor + Teletrabalho + computador pessoal    
-        elif tipo == "S"and modo_titulo == "Servidor(a) está em teletrabalho." and maquina_titulo == "Máquina Pessoal.":
+        elif tipo in ["S","V"] and modo_titulo == "Servidor(a) está em teletrabalho." and maquina_titulo == "Máquina Pessoal.":
             print("\nAdicionando descrição")
             #pyperclip.copy(texto)
             #pyautogui.hotkey("ctrl", "v")
@@ -264,7 +265,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             colar_texto(text4)
             
         #Servidor + Teletrabalho + computador corporativo    
-        elif tipo == "S"and modo_titulo == "Servidor(a) está em teletrabalho." and maquina_titulo == "Máquina Corporativa.":
+        elif tipo in ["S","V"] and modo_titulo == "Servidor(a) está em teletrabalho." and maquina_titulo == "Máquina Corporativa.":
             print("\nAdicionando descrição")
             #pyperclip.copy(texto)
             #pyautogui.hotkey("ctrl", "v")
@@ -303,7 +304,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     pyautogui.press('enter')
     
 #-------------Tombo-------------------# 
-    if tipo == "S":
+    if tipo in ["S","V"]:
         #2x TAb 
         for _ in range(2):
             pyautogui.press("tab")
@@ -329,7 +330,8 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         
 #-------------------Preenchimento Categoria --------------------------#
     
-    if tipo != "S":
+    #if tipo != "S":
+    if tipo not in ["S","V"]:
         #2x TAb 
         for _ in range(3):
             pyautogui.press("tab")
