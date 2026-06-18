@@ -596,7 +596,7 @@
     "71": {
     "titulo": "VPN - Problema de navegação após conexão",
     "resumo": "VPN - Problema de navegação após conexão",
-    "conteudo": " Solicita a verificação da VPN Global, pois informa que não está conseguindo estabelecer conexão com sites do TRT2, sendo exibido erro durante a tentativa de acesso.\nMensagem de erro:\n\n",
+    "conteudo": ", solicita a verificação da conexão por meio da VPN Global, informando que não está conseguindo acessar os sites do TRT-2. Relata que, durante as tentativas de acesso, é exibida uma mensagem de erro, impedindo a navegação.\nMensagem de erro:\n\n",
     "categoria": "Erro ou Falha",
     "item": "VPN"
     }
