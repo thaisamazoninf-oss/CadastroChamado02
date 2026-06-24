@@ -419,6 +419,7 @@
       "categoria": "Sem Acesso",
       "resol": ""
     },
+    
     "49": {
       "titulo": "PJe - Alteração do e-mail",
       "resumo": "PJe - Alteração do e-mail",
@@ -427,6 +428,7 @@
       "categoria": "Alteração de Usuário",
       "resol": ""
     },
+
     "50": {
       "titulo": "Extensões navegador Firefox - Erro na extensão +PJe",
       "resumo": "Extensões navegador Firefox - Erro na extensão +PJe",
@@ -615,6 +617,15 @@
     "conteudo": ", informa que não está conseguindo visualizar a minuta de voto no PJe, aparece apenas tela em branco.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
     "categoria": "Erro ou Falha",
     "item": "VPN"
+    }, 
+
+    "74": {
+    "titulo": "PJe - Alteração de perfil",
+    "resumo": "PJe - Alteração de perfil",
+    "conteudo": ", entrou em contato requerendo a alteração de seu perfil de Jus Postulandi para Advogado(a) no 1º e 2º graus de jurisdição.\nNaturalidade:\nOAB em anexo.\n\n",
+    "item": "Pje (Serviço)",
+    "categoria": "Alteração de Usuário",
+    "resol": ""
     }
 
   },
