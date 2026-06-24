@@ -367,10 +367,10 @@ def main():
     canvas.pack(side="left", fill="both", expand=True)
 
     # Barra de rolagem
-    scrollbar = tk.Scrollbar(container, orient="vertical", command=canvas.yview)
-    scrollbar.pack(side="right", fill="y")
+    #scrollbar = tk.Scrollbar(container, orient="vertical", command=canvas.yview)
+    #scrollbar.pack(side="right", fill="y")
 
-    canvas.configure(yscrollcommand=scrollbar.set)
+    #canvas.configure(yscrollcommand=scrollbar.set)
 
     # Frame interno
     frame_principal = tk.Frame(canvas)
@@ -383,10 +383,10 @@ def main():
     )
 
     # Atualiza região do scroll
-    def atualizar_scroll(event):
-        canvas.configure(scrollregion=canvas.bbox("all"))
+    #def atualizar_scroll(event):
+    #    canvas.configure(scrollregion=canvas.bbox("all"))
 
-    frame_principal.bind("<Configure>", atualizar_scroll)
+    #frame_principal.bind("<Configure>", atualizar_scroll)
 
     # Ajusta largura automaticamente
     def resize_frame(event):
@@ -395,10 +395,10 @@ def main():
     canvas.bind("<Configure>", resize_frame)
 
     # Scroll com mouse
-    canvas.bind_all(
-        "<MouseWheel>",
-        lambda e: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units")
-    )
+    #canvas.bind_all(
+    #    "<MouseWheel>",
+    #    lambda e: canvas.yview_scroll(int(-1 * (e.delta / 120)), "units")
+    #)
 
     # Inicia aplicação
     app = Aplicacao(frame_principal)

@@ -600,10 +600,19 @@
     "categoria": "Erro ou Falha",
     "item": "VPN"
     },
+
     "72": {
     "titulo": "PJe - Editor estruturado - Erro de assinatura",
     "resumo": "PJe - Editor estruturado - Erro de assinatura",
     "conteudo": ", informa que não está conseguindo assinar voto no PJe via PDPJ com seu certificado.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
+    "categoria": "Erro ou Falha",
+    "item": "VPN"
+    },
+
+    "73": {
+    "titulo": "PJe - Editor estruturado - Erro ao visualizar voto",
+    "resumo": "PJe - Editor estruturado - Erro ao visualizar voto",
+    "conteudo": ", informa que não está conseguindo visualizar a minuta de voto no PJe, aparece apenas tela em branco.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
     "categoria": "Erro ou Falha",
     "item": "VPN"
     }
