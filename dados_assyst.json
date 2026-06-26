@@ -86,7 +86,7 @@
       "resol": "Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️"
     },
     "9": {
-      "titulo": "Chamado de Audiência",
+      "titulo": "Chamado de Audiência - Falha na aplicação Zoom",
       "resumo": "Audiência | Sessão | Conciliação",
       "conteudo": " informa que não está conseguindo acessar a aplicação Zoom, pois está apresentando problemas.\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
       "categoria": "erro",
@@ -595,6 +595,7 @@
       "item": "Audiência | Sessão | ",
       "resol": ""
     },
+
     "71": {
     "titulo": "VPN - Problema de navegação após conexão",
     "resumo": "VPN - Problema de navegação após conexão",
@@ -626,6 +627,15 @@
     "item": "Pje (Serviço)",
     "categoria": "Alteração de Usuário",
     "resol": ""
+    },
+
+    "75": {
+      "titulo": "Chamado de Audiência - Falha no microfone",
+      "resumo": "Audiência | Sessão | Conciliação - Falha no microfone",
+      "conteudo": " solicita a verificação do microfone da sala de audiência, pois o dispositivo não está captando audio.\nO(A) servidor(a) realizou a verificação dos cabos, informando que não foram constatadas irregularidades.\n\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "categoria": "Erro ou Falha",
+      "item": "Audiência | Sessão | ",
+      "resol": ""
     }
 
   },
