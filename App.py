@@ -41,6 +41,7 @@ class Aplicacao:
 
         self.carregar_dados()
         self.criar_interface()
+        
 
 
 ################## Limpar campos ######################
@@ -154,12 +155,46 @@ class Aplicacao:
         self.assunto_por_titulo = {
             info['titulo']: chave for chave, info in self.assuntos.items()
         }
+        
         titulos_assuntos = list(self.assunto_por_titulo.keys())
+        
         self.assunto_titulo_var.set(titulos_assuntos[0])
-        self.menu_assunto = Combobox(assunto_frame, values=titulos_assuntos,
-                                    textvariable=self.assunto_titulo_var, state="readonly")
-        self.menu_assunto.pack(fill='x', padx=5, pady=5)
-
+        
+        self.menu_assunto = Combobox(
+            assunto_frame, 
+            values=titulos_assuntos,
+            textvariable=self.assunto_titulo_var, 
+            state="readonly"
+        )
+        
+        self.menu_assunto.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
+        
+        #-------------- Caixa de orientação
+        self.lbl_info = Label (
+            assunto_frame,
+            text=" ",
+            justify="left",
+            anchor="nw",
+            relief="solid",
+            width=40,
+            wraplength=250
+        )
+        
+        self.lbl_info.grid(row=0,column=1,padx=10, pady=5, sticky="n")
+        
+        assunto_frame.columnconfigure(0, weight=1)
+        
+        #liga o evento do assunto
+        self.menu_assunto.bind(
+            "<<ComboboxSelected>>",
+            self.atualizar_info_assunto()
+        )
+        print(self.menu_assunto.bind("<<ComboboxSelected>>"))
+        
+        #self.atualizar_info_assunto()
+        
+        
+        
         #--------------------- Campo Modo presencial ou teletrabalho ------------------------------#
         self.modo_frame = LabelFrame(self.root, text="Modo", padding=10)
         self.modo_por_titulo = {
@@ -223,8 +258,21 @@ class Aplicacao:
             command=self.cancelar_operacao
         )
         self.botao_cancelar.pack(side="left", padx=5)
+        
+################# ATUALIZAR ASSUNTOS ################################
 
-
+    def atualizar_info_assunto(self, event=None):
+        titulo = self.assunto_titulo_var.get()
+        
+        chave = self.assunto_por_titulo[titulo]
+        #print(self.assuntos[chave])
+        
+        setor = self.assuntos[chave].get(
+            "setor",
+            "Nenhuma orientação cadastrada"
+        )
+        
+        self.lbl_info.config(text=setor)
         
 ######################### ATUALIZAR ASSUNTOS #############################################
 

@@ -52,7 +52,8 @@
       "resumo": "Computador - Não liga",
       "conteudo": " solicita a verificação do computador/notebook corporativo, pois máquina não está ligando.\nO(A) servidor(a) realizou a verificação dos cabos de rede e de alimentação elétrica, informando que não foram constatadas irregularidades.\n\n",
       "categoria": "Não Liga",
-      "item": "Computador"
+      "item": "Computador",
+      "setor":"Field"
     },
 
     "7": {
@@ -257,7 +258,8 @@
       "conteudo": " informa que não está conseguindo acessar o acervo digital.\n\nMensagem de erro: Erro 404 Forbidden.\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
       "categoria": "Erro ou Falha",
       "item": "Acervo Digital",
-      "resol":" "
+      "resol":" ",
+      "setor":"S.Operação"
     },
 
     "30": {
