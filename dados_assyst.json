@@ -152,6 +152,7 @@
       "resol":"Orientado(a) a verificar andamento processual com a XXª Vara Trabalhista através do número: ",
       "atribuir":"S. SUSTENT PJE-JT"
     },
+
     "17": {
       "titulo": "PJe - Sem Acesso",
       "resumo": "PJE - Sem acesso",
@@ -160,6 +161,7 @@
       "item": "Pje (Serviço)",
       "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PJeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente. "
     },
+    
     "18": {
       "titulo": "Intranet - Sem acesso",
       "resumo": "Intranet - Sem acesso",
@@ -230,6 +232,7 @@
       "item": "Pje (Serviço)",
       "resol":" "
     },
+    
     "27": {
       "titulo": "Windows 11 - atualização",
       "resumo": "Windows 11 - atualização",
@@ -254,6 +257,7 @@
       "item": "Acervo Digital",
       "resol":" "
     },
+
     "30": {
       "titulo": "Intranet - Reset do autenticador",
       "resumo": "Autenticador TRT2 - Intranet - Reset",
@@ -262,6 +266,7 @@
       "item": "Autenticador TRT2 (Serviço)",
       "resol":" "
     },
+
     "31": {
       "titulo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
       "resumo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
@@ -270,6 +275,7 @@
       "item": "TRTCloud - Acesso à conta",
       "resol":" "
     },
+
     "32": {
       "titulo": "Monitor - Não liga",
       "resumo": "Monitor - Não liga",
