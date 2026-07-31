@@ -7,8 +7,14 @@ import time
 COORDS = {
     "campo_usuario" : (517,314),
     "adicionar_telefone": (889, 314),
-    "clique_secao": (407, 428)
+    "clique_secao": (407, 428),
+    #"selecionar_usuario_anonimo": (593, 369),
+    #"clicar_no_campo_nome": (899, 487),
+    #"clique_ok": (970, 532),
+    #"Confirme_secao": (364, 452),
+    #"selecionar_item": (842, 730)
 }
+
 
 cancelar = False
 

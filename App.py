@@ -1,11 +1,12 @@
 import os
 import sys
 import tkinter as tk
+from resolucao import JanelaResolucao
 from tkinter import messagebox, PhotoImage
 from ttkbootstrap import Style
 from PIL import Image, ImageTk
 from ttkbootstrap.widgets import Frame, Label, Entry, Button, Radiobutton, Combobox, LabelFrame
-import action2
+import action
 import threading
 import json
 
@@ -41,9 +42,19 @@ class Aplicacao:
 
         self.carregar_dados()
         self.criar_interface()
+    
+#################### Metodo Abrir resolução ################################
+    def abrir_resolucao(self):
         
-
-
+        dados = {
+            "nome": self.nome_var.get(),
+            "matricula":self.matricula_var.get(),
+            "contato": self.contato_var.get(),
+            "assunto": self.assunto_titulo_var.get()
+        }
+        
+        JanelaResolucao(self.root, dados)
+        
 ################## Limpar campos ######################
     def limpar_campos(self):
         self.oab_var.set("")
@@ -64,14 +75,14 @@ class Aplicacao:
             return
             
         threading.Thread(
-            target=action2.iniciar_automacao,
+            target=action.iniciar_automacao,
             args=(dados,),
             daemon=True
         ).start()
         
     ################## Cancela operação #########################
     def cancelar_operacao(self):
-        action2.parar()
+        action.parar()
             
     ######################### CARREGAR DADOS #############################################
 
@@ -84,7 +95,7 @@ class Aplicacao:
             #--------- Roda em Theread para não travar a interface
             
             threading.Thread (
-                target=action2.iniciar_automacao,
+                target=action.iniciar_automacao,
                 args=(dados_assyst,),
                 daemon=True
             ).start()
@@ -155,46 +166,12 @@ class Aplicacao:
         self.assunto_por_titulo = {
             info['titulo']: chave for chave, info in self.assuntos.items()
         }
-        
         titulos_assuntos = list(self.assunto_por_titulo.keys())
-        
         self.assunto_titulo_var.set(titulos_assuntos[0])
-        
-        self.menu_assunto = Combobox(
-            assunto_frame, 
-            values=titulos_assuntos,
-            textvariable=self.assunto_titulo_var, 
-            state="readonly"
-        )
-        
-        self.menu_assunto.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
-        
-        #-------------- Caixa de orientação
-        self.lbl_info = Label (
-            assunto_frame,
-            text=" ",
-            justify="left",
-            anchor="nw",
-            relief="solid",
-            width=40,
-            wraplength=250
-        )
-        
-        self.lbl_info.grid(row=0,column=1,padx=10, pady=5, sticky="n")
-        
-        assunto_frame.columnconfigure(0, weight=1)
-        
-        #liga o evento do assunto
-        self.menu_assunto.bind(
-            "<<ComboboxSelected>>",
-            self.atualizar_info_assunto()
-        )
-        print(self.menu_assunto.bind("<<ComboboxSelected>>"))
-        
-        #self.atualizar_info_assunto()
-        
-        
-        
+        self.menu_assunto = Combobox(assunto_frame, values=titulos_assuntos,
+                                    textvariable=self.assunto_titulo_var, state="readonly")
+        self.menu_assunto.pack(fill='x', padx=5, pady=5)
+
         #--------------------- Campo Modo presencial ou teletrabalho ------------------------------#
         self.modo_frame = LabelFrame(self.root, text="Modo", padding=10)
         self.modo_por_titulo = {
@@ -227,14 +204,14 @@ class Aplicacao:
 
         # -------------------- Frame dos botões ----------------#
         self.btn_frame = Frame(self.root)
-        self.btn_frame.pack(fill='x', padx=20, pady=(10, 20))
+        self.btn_frame.pack(padx=20, pady=(10, 20))
 
         # Botão confirmar
         self.botao_confirmar = Button(
             self.btn_frame,
-            text="Confirmar e Iniciar",
+            text="Cadastrar",
             bootstyle="success",
-            width=25,
+            width=10,
             command=self.confirmar_dados
         )
         self.botao_confirmar.pack(side="left", padx=5)
@@ -242,9 +219,9 @@ class Aplicacao:
         # Botão limpar
         self.botao_limpar = Button(
             self.btn_frame,
-            text="Limpar Campos",
+            text="Limpar",
             bootstyle="warning",
-            width=20,
+            width=10,
             command=self.limpar_campos
         )
         self.botao_limpar.pack(side="left", padx=5)
@@ -254,25 +231,20 @@ class Aplicacao:
             self.btn_frame,
             text="Cancelar",
             bootstyle="danger",
-            width=20,
+            width=10,
             command=self.cancelar_operacao
         )
         self.botao_cancelar.pack(side="left", padx=5)
-        
-################# ATUALIZAR ASSUNTOS ################################
 
-    def atualizar_info_assunto(self, event=None):
-        titulo = self.assunto_titulo_var.get()
-        
-        chave = self.assunto_por_titulo[titulo]
-        #print(self.assuntos[chave])
-        
-        setor = self.assuntos[chave].get(
-            "setor",
-            "Nenhuma orientação cadastrada"
+        # Botão resolução
+        self.botao_resolucao = Button(
+            self.btn_frame,
+            text="Resolução",
+            bootstyle="primary",
+            width=10,
+            command=self.abrir_resolucao
         )
-        
-        self.lbl_info.config(text=setor)
+        self.botao_resolucao.pack(side="left", padx=5)
         
 ######################### ATUALIZAR ASSUNTOS #############################################
 
@@ -374,13 +346,13 @@ class Aplicacao:
         
 ################## Cancelar operação ######################
     def cancelar_operacao(self):
-        action2.parar()
+        action.parar()
 
 ######################### CONFIRMAR DADOS #############################################
     def confirmar_dados(self):
         try:
-            import action2
-            action2.preencher_assyst(
+            import action
+            action.preencher_assyst(
                 tipo=self.tipo_var.get(),
                 nome=self.nome_var.get(),
                 oab=self.oab_var.get(),
@@ -404,7 +376,7 @@ class Aplicacao:
 def main():
     root = tk.Tk()
     root.title("Cadastro de Usuário Assyst")
-    root.geometry("700x750")
+    root.geometry("515x750")#LarguraxAltura
 
     # Frame principal
     container = tk.Frame(root)
