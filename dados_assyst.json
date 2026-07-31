@@ -143,6 +143,7 @@
       "item": "Google Drive (Desktop) (Serviço)",
       "resol":" foi feito o acesso remoto e realizado o acesso no Google Drive. Após procedimento, o mesmo conseguiu acessar normalmente."
     },
+
     "16": {
       "titulo": "SISCONDJ - Erro de procedimento",
       "resumo": "SISCONDJ - Erro de procedimento",
@@ -170,6 +171,7 @@
       "item": "Intranet",
       "resol":" "
     },
+
     "19": {
       "titulo": "Impressora - Não Imprime",
       "resumo": "Impressora - Não Imprime",
@@ -177,6 +179,7 @@
       "categoria": "Não imprime",
       "item": "Digitalização e "
     },
+
     "20": {
       "titulo": "Malote Digital - Sem acesso",
       "resumo": "Malote Digital - Sem acesso",
@@ -185,6 +188,7 @@
       "item": "Malote Digital (Serviço)",
       "resol":" "
     },
+
     "21": {
       "titulo": "Extensões navegador Firefox - Instalação",
       "resumo": "Extensões navegador Firefox - Instalação",
@@ -193,6 +197,7 @@
       "item": "Extensões navegador Firefox (Serviço)",
       "resol":" "
     },
+    
     "22": {
       "titulo": "Ramal - Redirecionamento de ramal",
       "resumo": "Ramal - Redirecionamento de ramal",
@@ -201,6 +206,7 @@
       "item": "Ramal",
       "resol":" "
     },
+
     "23": {
       "titulo": "SISCONDJ - Alteração de Usuário",
       "resumo": "SISCONDJ - Alteração de Usuário",
@@ -209,6 +215,7 @@
       "item": "SISCONDJ (Serviço)",
       "resol":" "
     },
+
     "24": {
       "titulo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
       "resumo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
@@ -217,6 +224,7 @@
       "item": "TRTCloud - Gmail (Serviço)",
       "resol":" "
     },
+
     "25": {
       "titulo": "Computador - Lentidão",
       "resumo": "Computador - Lentidão",
@@ -224,6 +232,7 @@
       "categoria": "Lentidão",
       "item": "Computador"
     },
+
     "26": {
       "titulo": "PJE - Erro ao anexar arquivos",
       "resumo": "PJE - Erro ao anexar arquivos",
@@ -241,6 +250,7 @@
       "item": "Windows 11 (Serviço)",
       "resol":" "
     },
+    
     "28": {
       "titulo": "Cadastros de dados bancarios - Sem acesso",
       "resumo": "Cadastros de dados bancarios - Sem acesso",
@@ -249,6 +259,7 @@
       "item": "Cadastro de Dados Bancários de Advogados (Serviço)",
       "resol":" "
     },
+
     "29": {
       "titulo": "Acervo Digital - Erro Forbidden",
       "resumo": "Acervo Digital - Erro Forbidden",
