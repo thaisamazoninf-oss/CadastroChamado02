@@ -504,7 +504,7 @@
     "58": {
       "titulo": "Rede/Internet - Sem Acesso",
       "resumo": "Rede/Internet - Sem Acesso",
-      "conteudo": " Solicita a verificação da conexão de internet no computador, pois informa que a máquina está apresentando falha ao se conectar à rede.\nO(A) servidor(a) realizou a verificação dos cabos de rede, informando que não foram constatadas irregularidades.\n\n",
+      "conteudo": " solicita a verificação da conexão de internet no computador, pois informa que a máquina está apresentando falha ao se conectar à rede.\nO(A) servidor(a) realizou a verificação dos cabos de rede, informando que não foram constatadas irregularidades.\n\n",
       "categoria": "Sem Acesso",
       "item": "Rede/Internet"
     },
@@ -512,7 +512,7 @@
     "59": {
       "titulo": "VPN - Erro na conexão",
       "resumo": "VPN - Erro na conexão",
-      "conteudo": " Solicita a verificação da VPN Global, pois informa que não está conseguindo estabelecer conexão, sendo exibido erro durante a tentativa de acesso.\nMensagem de erro:\n\n",
+      "conteudo": " solicita a verificação da VPN Global, pois informa que não está conseguindo estabelecer conexão, sendo exibido erro durante a tentativa de acesso.\nMensagem de erro:\n\n",
       "categoria": "Erro ou Falha",
       "item": "VPN (Serviço)"
     },
@@ -605,7 +605,7 @@
     "71": {
     "titulo": "VPN - Problema de navegação após conexão",
     "resumo": "VPN - Problema de navegação após conexão",
-    "conteudo": " Solicita a verificação da VPN Global, pois informa que não está conseguindo estabelecer conexão com sites do TRT2, sendo exibido erro durante a tentativa de acesso.\nMensagem de erro:\n\n",
+    "conteudo": " solicita a verificação da VPN Global, pois informa que não está conseguindo estabelecer conexão com sites do TRT2, sendo exibido erro durante a tentativa de acesso.\nMensagem de erro:\n\n",
     "categoria": "Erro ou Falha",
     "item": "VPN"
     }
