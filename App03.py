@@ -192,14 +192,14 @@ class Aplicacao:
 
         # -------------------- Frame dos botões ----------------#
         self.btn_frame = Frame(self.root)
-        self.btn_frame.pack(fill='x', padx=20, pady=(10, 20))
+        self.btn_frame.pack(padx=20, pady=(10, 20))
 
         # Botão confirmar
         self.botao_confirmar = Button(
             self.btn_frame,
-            text="Confirmar e Iniciar",
+            text="Cadastrar",
             bootstyle="success",
-            width=25,
+            width=10,
             command=self.confirmar_dados
         )
         self.botao_confirmar.pack(side="left", padx=5)
@@ -207,9 +207,9 @@ class Aplicacao:
         # Botão limpar
         self.botao_limpar = Button(
             self.btn_frame,
-            text="Limpar Campos",
+            text="Limpar",
             bootstyle="warning",
-            width=20,
+            width=10,
             command=self.limpar_campos
         )
         self.botao_limpar.pack(side="left", padx=5)
@@ -219,7 +219,7 @@ class Aplicacao:
             self.btn_frame,
             text="Cancelar",
             bootstyle="danger",
-            width=20,
+            width=10,
             command=self.cancelar_operacao
         )
         self.botao_cancelar.pack(side="left", padx=5)
@@ -237,7 +237,7 @@ class Aplicacao:
         if tipo == "Q":
             # Mostrar só "Queda de ligação"
             assuntos_filtrados = ["Queda de ligação","Engano de chamada","Ligação muda"]
-        elif tipo in ["A", "AE", "E"]:
+        elif tipo in ["AE", "E"]:
             # Remove os assuntos que não quer mostrar para Advogados  e publico em geral.
             remover = ["Computador - Não liga", "Zoom - Sem acesso","Queda de ligação", "Audiência - Zoom - Sem acesso","VPN - instalação", "Ramal - Não funciona", "TrtCloud Drive - Sem Acesso","SISCONDJ - Erro de procedimento","VPN - Instalação","Ramal - Não está recebendo chamadas", "Chamado de Audiência","Intranet - Sem acesso", "Impressora - Não Imprime", "Malote Digital - Sem acesso", "Mozilla Firefox - Instalação de Extensão", "Ramal - Redirecionamento de ramal", "TrtCloud Gmail - Sem Acesso Codigo segurança", "Computador - Lentidão", "Windows 11 - atualização", "Autenticador TRT2 - Intranet - Reset", "Certificado Digital - Instalação", "Certificado Digital - Reset/Desbloqueio de Token", "Computador - Solicitação de equipamento", "Corisco ChatJT - Instalação", "Intranet - Reset/Desbloqueio", "Monitor - Não liga", "Monitor - Solicitação de equipamento", "Notebook - Solicitação de equipamento", "Ponto Eletrônico (Serviço) - Erro ao registrar", "TrtCloud Drive - Sem Acesso", "TrtCloud Gmail - Reset/Desbloqueio Senha","Engano de chamada","Chamado de Audiência - Sem acesso a pasta de audiência","Computador - Falha na Migração de Dominio","Computador - Implantação de novo dominio de rede" ]
             assuntos_filtrados = [a for a in assuntos_filtrados if a not in remover]
@@ -284,35 +284,35 @@ class Aplicacao:
         #tipo = self.tipo_var.get()
         # Ordem fixa e personalizada
         campos_em_ordem = [
+            "Matrícula:",
             "Número da OAB:",
-            "Nome completo:",
-            "E-mail:",
-            "CPF:",
-            "Contato:",
             "Estado (UF):",
-            "Matrícula:"
+            "Nome completo:",
+            "Contato:",
+            "CPF:",
+            "E-mail:"
         ]
 
         # Exibe campos conforme o tipo
         tipo = self.tipo_var.get()
 
         for campo in campos_em_ordem:
-            if campo == "Número da OAB:" and tipo in ["A", "AE"]:
+            if campo == "Número da OAB:" and tipo in ["AE"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
-            elif campo == "E-mail:" and tipo in ["A", "E", "AE"]:
+            elif campo == "E-mail:" and tipo in ["E", "AE"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
             elif campo == "Nome completo:" and tipo in ["E", "AE"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
-            elif campo == "Contato:" and tipo in ["A","E", "AE","S","V"]:
+            elif campo == "Contato:" and tipo in ["E", "AE","S","V"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
             elif campo == "Estado (UF):" and tipo == "AE":
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
-            elif campo == "CPF:" and tipo in ["A", "E", "AE"]:
+            elif campo == "CPF:" and tipo in ["E", "AE"]:
                 self.labels_entries[campo][0].pack()
                 self.labels_entries[campo][1].pack()
             elif campo == "Matrícula:" and tipo in ["S","V"]:
@@ -322,7 +322,7 @@ class Aplicacao:
         
         # Botão fique sempre no final
         self.btn_frame.pack_forget()
-        self.btn_frame.pack(fill='x', padx=20, pady=(10, 20))
+        self.btn_frame.pack(padx=20, pady=(10, 20))
         
 ################## Cancelar operação ######################
     def cancelar_operacao(self):

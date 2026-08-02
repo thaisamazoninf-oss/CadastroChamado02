@@ -1,8 +1,6 @@
 {
   "tipos": {
-    "A": {
-      "perfil": "Advogado(a) de São Paulo"
-    },
+
     "AE": {
       "perfil": "Advogado(a)",
       "Estado": "Fora de SP"
@@ -23,46 +21,51 @@
   
   "assuntos": {
     "1": {
-      "titulo": "PJe - Indisponível",
-      "resumo": "PJe - Indisponível",
-      "conteudo": " entrou em contato informando que está enfrentando dificuldades para acessar o sistema PJe via PDPJ, relatando que o mesmo aparenta estar fora do ar.\nMensagem de erro:",
+      "titulo": "Pje - Indisponível",
+      "resumo": "Pje - Indisponível",
+      "conteudo": " entrou em contato informando que está enfrentando dificuldades para acessar o sistema Pje via PDPJ, relatando que o mesmo aparenta estar fora do ar.\nMensagem de erro:",
       "categoria": "Indisponibilidade",
       "item": "Pje ",
       "resol": " "
       
+
     },
     "2": {
-      "titulo": "PJeOffice Pro - Configuração",
-      "resumo": "PJeOffice Pro - Configuração",
+      "titulo": "PjeOffice Pro - Configuração",
+      "resumo": "PjeOffice Pro - Configuração",
       "conteudo": " entra em contato solicita orientações sobre a configuração do certificado digital no PjeOfficePro",
       "categoria": "Configuração",
-      "item": "PJeOffice Pro (Serviço)",
-      "resol":"foi feito o acesso remoto e realizado a configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu acessar normalmente."
+      "item": "PjeOffice Pro (Serviço)",
+      "resol":"foi feito o acesso remoto e realizado a configuração do assinador PjeOfficePro, após procedimento o mesmo conseguiu acessar normalmente."
     },
+
     "3": {
-      "titulo": "PJe - Erro ao assinar",
-      "resumo": "PJe - Erro ao assinar",
-      "conteudo": " informa que não está conseguindo assinar no PJe via PDPJ com seu certificado.\n\nOcorre no 1º grau e 2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
+      "titulo": "Pje - Erro ao assinar",
+      "resumo": "Pje - Erro ao assinar",
+      "conteudo": " informa que não está conseguindo assinar no Pje via PDPJ com seu certificado.\n\nO problema ocorre no(s) ambiente(s) de 1º Grau e 2º Grau.\nOcorre somente 1º 2º grau.\n\nMensagem de erro:\n\nTestes durante atendimento:\nNavegador(es) utilizado(s):\nVersão do PjeOffice: atualizada\nValidado o certificado digital",
       "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje ",
-      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PjeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
     },
+
     "4": {
-      "titulo": "PJe - Questionamento",
-      "resumo": "PJe - Questionamento Técnico",
-      "conteudo": ", questiona sobre ocorrido, pois\n\nNavegador utilizado: Firefox e Google Chrome",
+      "titulo": "Pje - Questionamento",
+      "resumo": "Pje - Questionamento Técnico",
+      "conteudo": ", questiona sobre ocorrido, pois\n\nNavegador(es) utilizado(s): Firefox e Google Chrome",
       "categoria": "ques",
       "item": "Pje ",
       "resol": ""
     },
+
     "5": {
       "titulo": "Certificado Digital - Configuração",
       "resumo": "Certificado Digital - Configuração",
       "conteudo": ", solicita orientação/acesso remoto para configuração do certificado digital: ePass2003/SafeNet/SafeSign.\n\n",
       "categoria": "Configuração",
       "item": "Certificado Digital",
-      "resol":"foi feito o/a orientação/acesso remoto e realizado a configuração do certificado digital. Testes realizados com sucesso."
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a configuração do certificado digital. Teste(s) realizado(s) com sucesso."
     },
+
     "6": {
       "titulo": "Computador - Não liga",
       "resumo": "Computador - Não liga",
@@ -70,6 +73,7 @@
       "categoria": "Não Liga",
       "item": "Computador"
     },
+
     "7": {
       "titulo": "Queda de ligação",
       "resumo": "Queda de Ligação (chamada improdutiva)",
@@ -77,30 +81,34 @@
       "item": "Queda",
       "categoria": "por"
     },
+
     "8": {
       "titulo": "Cobrança de Evento",
-      "resumo": " Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️",
-      "conteudo": "Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️",
+      "resumo": " Cobrança de Evento - XXXXXX - S. SUSTENT Pje-JT/Field Services 🖥️",
+      "conteudo": "Cobrança de Evento - XXXXXX - S. SUSTENT Pje-JT/Field Services 🖥️",
       "categoria": "por",
       "item": "Cobrança",
-      "resol": "Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️"
+      "resol": "Cobrança de Evento - XXXXXX - S. SUSTENT Pje-JT/Field Services 🖥️"
     },
+
     "9": {
-      "titulo": "Chamado de Audiência",
-      "resumo": "Audiência | Sessão | Conciliação",
-      "conteudo": " informa que não está conseguindo acessar a aplicação Zoom, pois está apresentando problemas.\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "titulo": "Audiência - Problema no Zoom",
+      "resumo": "Audiência | Sessão | Conciliação - Falha na aplicação Zoom",
+      "conteudo": " informa que não está conseguindo acessar a aplicação Zoom, pois está apresentando problemas.\nO(A) mesmo(a) informar que está em audiência nesse momento.\n\n",
       "categoria": "erro",
       "item": "Audiência | Sessão | ",
       "resol": ""
     },
+
     "10": {
       "titulo": "VPN - Instalação",
       "resumo": "VPN - Instalação",
       "conteudo": ", solicita instalação da VPN Global.\n\n",
       "categoria": "ins",
       "item": "VPN",
-      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação da VPN Global. Testes realizados com sucesso."
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação da VPN Global. Teste(s) realizado(s) com sucesso."
     },
+
     "11": {
       "titulo": "Ramal - Não funciona",
       "resumo": "Ramal - Não está recebendo chamadas",
@@ -109,16 +117,18 @@
       "item": "Ramal",
       "resol":"Atribuir  SART para verificação"
     },
+
     "12": {
-      "titulo": "PJe - Acessar com login e senha",
-      "resumo": "PJe - Cadastro de Senha",
-      "conteudo": " solicita auxílio para acessar o PJE com usuário e senha.",
+      "titulo": "Pje - Acessar com login e senha",
+      "resumo": "Pje - Cadastro de Senha",
+      "conteudo": " solicita auxílio para acessar o Pje com usuário e senha.",
       "categoria": "Configuração",
       "item": "Pje ",
-      "resol":"Foi orientado acessar o PJe com ceritficado digital, clicar em PAINEL ANTIGO -> Configuração -> pessoa -> cadastro de senha.\nPJE - Permitir o acesso utilizando login e senha SIM e redefinir a mesma atendendo os quesitos solicitados"
+      "resol":"Foi orientado acessar o Pje com ceritficado digital, clicar em PAINEL ANTIGO -> Configuração -> pessoa -> cadastro de senha.\nPje - Permitir o acesso utilizando login e senha SIM e redefinir a mesma atendendo os quesitos solicitados"
     },
+
     "13": {
-      "titulo": "PJe - Consulta Andamento Processual",
+      "titulo": "Pje - Consulta Andamento Processual",
       "resumo": "Consulta Andamento Processual - Questionamento Técnico",
       "conteudo": " solicita auxílio para consultar sobre andamento processual a qual o(a) mesmo(a) é parte.\n\nN.º do processo: \n\n XXª - Vara trabalhista. ",
       "categoria": "Questioname",
@@ -128,7 +138,7 @@
 
     "14": {
       "titulo": "Balcão Virtual - Atendimento",
-      "resumo": "PJe - Atendimento Balcão Virtual",
+      "resumo": "Pje - Atendimento Balcão Virtual",
       "conteudo": " solicita auxílio para consultar sobre andamento processual a qual o(a) mesmo(a) é parte.\n\nN.º do processo: \n\n XXª - Vara trabalhista. ",
       "categoria": "Atendimento via",
       "item": "Pje ",
@@ -143,6 +153,7 @@
       "item": "Google Drive (Desktop) (Serviço)",
       "resol":" foi feito o acesso remoto e realizado o acesso no Google Drive. Após procedimento, o mesmo conseguiu acessar normalmente."
     },
+
     "16": {
       "titulo": "SISCONDJ - Erro de procedimento",
       "resumo": "SISCONDJ - Erro de procedimento",
@@ -150,24 +161,27 @@
       "categoria": "Erro ou Falha",
       "item": "SISCONDJ (Serviço)",
       "resol":"Orientado(a) a verificar andamento processual com a XXª Vara Trabalhista através do número: ",
-      "atribuir":"S. SUSTENT PJE-JT"
+      "atribuir":"S. SUSTENT Pje-JT"
     },
+
     "17": {
-      "titulo": "PJe - Sem Acesso",
-      "resumo": "PJE - Sem acesso",
-      "conteudo": ", relata não conseguir acessar o sistema PJe por meio da Plataforma Digital do Poder Judiciário (PDPJ) utilizando certificado digital. O problema ocorre nos ambientes de 1º Grau e 2º Grau, impossibilitando a autenticação e o acesso ao sistema.\nOcorre somente 1º 2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "titulo": "Pje - Sem Acesso",
+      "resumo": "Pje - Sem acesso",
+      "conteudo": ", relata não conseguir acessar o sistema Pje por meio da Plataforma Digital do Poder Judiciário (PDPJ) utilizando certificado digital.\n\nO problema ocorre no(s) ambiente(s) de 1º Grau e 2º Grau, impossibilitando a autenticação e o acesso ao sistema.\n\nMensagem de erro: Usuário bloqueado\n\nTestes durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\nVersão do PjeOffice: atualizado.\nValidado certificado digital.\n\n",
       "categoria": "Sem Acesso",
       "item": "Pje (Serviço)",
-      "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PJeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente. "
+      "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PjeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente."
     },
+
     "18": {
       "titulo": "Intranet - Sem acesso",
       "resumo": "Intranet - Sem acesso",
-      "conteudo": " informa que não está conseguindo acessar a Intranet.\n\nMensagem de erro:\n\nTestes em ligação:\n— Navegador utilizado: Mozilla.\n\n",
+      "conteudo": " informa que não está conseguindo acessar a Intranet.\n\nMensagem de erro:\n\nTestes durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\n\n",
       "categoria": "Sem Acesso",
       "item": "Intranet",
       "resol":" "
     },
+
     "19": {
       "titulo": "Impressora - Não Imprime",
       "resumo": "Impressora - Não Imprime",
@@ -175,22 +189,25 @@
       "categoria": "Não imprime",
       "item": "Digitalização e "
     },
+
     "20": {
       "titulo": "Malote Digital - Sem acesso",
       "resumo": "Malote Digital - Sem acesso",
-      "conteudo": " informa que não está conseguindo acessar o Malote Digital.\n\nMensagem de erro:\n\nTestes em ligação:\n— Navegador utilizado: Mozilla.\n\n",
+      "conteudo": " informa que não está conseguindo acessar o Malote Digital.\n\nMensagem de erro:\n\nTestes durante atendimento:\n— Navegador(es) utilizado(s): Mozilla.\n\n",
       "categoria": "Sem Acesso",
       "item": "Malote Digital (Serviço)",
       "resol":" "
     },
+
     "21": {
       "titulo": "Extensões navegador Firefox - Instalação",
       "resumo": "Extensões navegador Firefox - Instalação",
-      "conteudo": " solicita orientação/para instalação da extensão: +PJe.\n\n",
+      "conteudo": " solicita orientação/para instalação da extensão: +Pje.\n\n",
       "categoria": "Instalação",
       "item": "Extensões navegador Firefox (Serviço)",
       "resol":" "
     },
+
     "22": {
       "titulo": "Ramal - Redirecionamento de ramal",
       "resumo": "Ramal - Redirecionamento de ramal",
@@ -199,6 +216,7 @@
       "item": "Ramal",
       "resol":" "
     },
+
     "23": {
       "titulo": "SISCONDJ - Alteração de Usuário",
       "resumo": "SISCONDJ - Alteração de Usuário",
@@ -207,6 +225,7 @@
       "item": "SISCONDJ (Serviço)",
       "resol":" "
     },
+
     "24": {
       "titulo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
       "resumo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
@@ -215,6 +234,7 @@
       "item": "TRTCloud - Gmail (Serviço)",
       "resol":" "
     },
+
     "25": {
       "titulo": "Computador - Lentidão",
       "resumo": "Computador - Lentidão",
@@ -222,14 +242,16 @@
       "categoria": "Lentidão",
       "item": "Computador"
     },
+
     "26": {
-      "titulo": "PJE - Erro ao anexar arquivos",
-      "resumo": "PJE - Erro ao anexar arquivos",
-      "conteudo": " informa que não está conseguindo anexar arquivos de mídias/PDF no PJe.\nN.º do processo: XXXXXXXXXXXXXXXXXX.\n\nMensagem de erro:\n\nTestes em ligação:\n— Navegador utilizado: Mozilla.\n— Solicitamos utilizar o otimizador de vídeos do PJe.\n— Renomear o arquivo para um nome mais curto.\n— Transformar em PDF-A.\n— Dividir arquivos.\n\n",
+      "titulo": "Pje - Erro ao anexar arquivos",
+      "resumo": "Pje - Erro ao anexar arquivos",
+      "conteudo": " informa que não está conseguindo anexar arquivos de mídias/PDF no Pje.\n\nO problema ocorre no(s) ambiente(s) de 1º Grau e 2º Grau, impossibilitando anexar arquivos no sistema.\nN.º do processo: XXXXXXXXXXXXXXXXXX.\n\nMensagem de erro:\n\nTeste(s) durante atendimento:\n— Navegador(es) utilizado(s): Mozilla.\n— Solicitamos utilizar o otimizador de vídeos do Pje.\n— Renomear o arquivo para um nome mais curto.\n— Transformar em PDF-A.\n— Dividir arquivos.\n\n",
       "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje (Serviço)",
       "resol":" "
     },
+
     "27": {
       "titulo": "Windows 11 - atualização",
       "resumo": "Windows 11 - atualização",
@@ -238,22 +260,25 @@
       "item": "Windows 11 (Serviço)",
       "resol":" "
     },
+
     "28": {
       "titulo": "Cadastros de dados bancarios - Sem acesso",
       "resumo": "Cadastros de dados bancarios - Sem acesso",
-      "conteudo": " informa que não está conseguindo acessar o cadastro de dados bancários do advogado.\n\nMensagem de erro:\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "conteudo": " informa que não está conseguindo acessar o cadastro de dados bancários do advogado.\n\nMensagem de erro:\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\nVersão do PjeOffice: atualizado.\nValidado certificado digital.\n\n",
       "categoria": "Sem Acesso",
       "item": "Cadastro de Dados Bancários de Advogados (Serviço)",
       "resol":" "
     },
+
     "29": {
       "titulo": "Acervo Digital - Erro Forbidden",
       "resumo": "Acervo Digital - Erro Forbidden",
-      "conteudo": " informa que não está conseguindo acessar o acervo digital.\n\nMensagem de erro: Erro 404 Forbidden.\n\nTestes em ligação:\n— Versão do PJeOffice: atualizado.\n— Navegador utilizado: Mozilla.\n— Validado certificado digital.\n\n",
+      "conteudo": " informa que não está conseguindo acessar o acervo digital.\n\nMensagem de erro: Erro 404 Forbidden.\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\nVersão do PjeOffice: atualizado.\nValidado certificado digital.\n\n",
       "categoria": "Erro ou Falha",
       "item": "Acervo Digital",
       "resol":" "
     },
+
     "30": {
       "titulo": "Intranet - Reset do autenticador",
       "resumo": "Autenticador TRT2 - Intranet - Reset",
@@ -262,6 +287,7 @@
       "item": "Autenticador TRT2 (Serviço)",
       "resol":" "
     },
+
     "31": {
       "titulo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
       "resumo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
@@ -270,6 +296,7 @@
       "item": "TRTCloud - Acesso à conta",
       "resol":" "
     },
+
     "32": {
       "titulo": "Monitor - Não liga",
       "resumo": "Monitor - Não liga",
@@ -310,7 +337,7 @@
       "conteudo": " solicita instalação do certificado digital: ePass2003/SafeNet/SafeSign.\n\n",
       "categoria": "Instalação",
       "item": "Certificado Digital",
-      "resol":"foi feito o acesso remoto e realizado a instalação do certificado digital. Testes realizados com sucesso."
+      "resol":"foi feito o acesso remoto e realizado a instalação do certificado digital. Teste(s) realizado(s) com sucesso."
     },
 
     "37": {
@@ -319,7 +346,7 @@
       "conteudo": " solicita orientações sobre o desbloqueio do certificado digital: ePass2003/SafeNet/SafeSign.\nO(a) mesmo(a) informa que possui a senha PUK.\n\n",
       "categoria": "Configuração",
       "item": "Certificado Digital",
-      "resol":"foi feito o acesso remoto e realizado a instalação do certificado digital. Testes realizados com sucesso."
+      "resol":"foi feito o acesso remoto e realizado a instalação do certificado digital. Teste(s) realizado(s) com sucesso."
     },
     "38": {
       "titulo": "SISCONDJ - Sem Acesso",
@@ -340,9 +367,9 @@
     },
 
     "40": {
-      "titulo": "PJe - Lentidão",
-      "resumo": "PJe - Lentidão",
-      "conteudo": " entrou em contato informando que está enfrentando dificuldades para acessar o sistema PJe via PDPJ, relatando que o mesmo aparenta lentidão no momento que tentar acessar.",
+      "titulo": "Pje - Lentidão",
+      "resumo": "Pje - Lentidão",
+      "conteudo": " entrou em contato informando que está enfrentando dificuldades para acessar o sistema Pje via PDPJ, relatando que o mesmo aparenta lentidão no momento que tentar acessar.",
       "categoria": "Lentidão",
       "item": "Pje ",
       "resol": " "
@@ -385,8 +412,8 @@
     },
 
     "45": {
-      "titulo": "PJe - Login Via MFA - Dúvida de Negócio",
-      "resumo": "PJe - Login Via MFA - Dúvida de Negócio",
+      "titulo": "Pje - Login Via MFA - Dúvida de Negócio",
+      "resumo": "Pje - Login Via MFA - Dúvida de Negócio",
       "conteudo": " entrou em contato solicitando orientação sobre como cadastrar o QR Code para autenticação no sistema do CNJ\n",
       "categoria": "Dúvida de Negócio",
       "item": "Pje",
@@ -394,8 +421,8 @@
     },
 
     "46": {
-      "titulo": "PJe -  Erro de código inválido – Autenticação CNJ",
-      "resumo": "PJe -  Erro de código inválido – Autenticação CNJ",
+      "titulo": "Pje -  Erro de código inválido – Autenticação CNJ",
+      "resumo": "Pje -  Erro de código inválido – Autenticação CNJ",
       "conteudo": " entrou em contato informa que, ao tentar autenticar via QR Code, o sistema apresenta mensagem de código inválido.\n",
       "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje",
@@ -412,25 +439,26 @@
     },
 
     "48": {
-      "titulo": "Chamado de Audiência - Sem acesso a pasta de audiência",
+      "titulo": "Audiência - Sem acesso a pasta de audiência",
       "resumo": "Audiência | Sessão | Conciliação - Sem Acesso a pasta de audiência",
-      "conteudo": " informa que não está conseguindo acessar as pastas da audiência.\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "conteudo": " informa que não está conseguindo acessar as pastas da audiência.\nO(A) mesmo(a) informar que está em audiência nesse momento.\n\n",
       "item": "Audiência | Sessão | ",
       "categoria": "Sem Acesso",
       "resol": ""
     },
     "49": {
-      "titulo": "PJe - Alteração do e-mail",
-      "resumo": "PJe - Alteração do e-mail",
-      "conteudo": " entrou em contato solicitando atualização do e-mail no PJe 1º e 2º Grau.\nE-mail atualizado:\nNaturalidade:\nOAB em anexo.\n\n",
+      "titulo": "Pje - Alteração do e-mail",
+      "resumo": "Pje - Alteração do e-mail",
+      "conteudo": " entrou em contato solicitando atualização do e-mail no Pje 1º e 2º Grau.\nE-mail atualizado:\nNaturalidade:\nOAB em anexo.\n\n",
       "item": "Pje (Serviço)",
       "categoria": "Alteração de Usuário",
       "resol": ""
     },
+
     "50": {
-      "titulo": "Extensões navegador Firefox - Erro na extensão +PJe",
-      "resumo": "Extensões navegador Firefox - Erro na extensão +PJe",
-      "conteudo": " solicita a verificação da extensão +PJe, tendo em vista que informou a ocorrência de falha em seu funcionamento.\n\n",
+      "titulo": "Extensões navegador Firefox - Erro na extensão +Pje",
+      "resumo": "Extensões navegador Firefox - Erro na extensão +Pje",
+      "conteudo": " solicita a verificação da extensão +Pje, tendo em vista que informou a ocorrência de falha em seu funcionamento.\n\n",
       "item": "Extensões navegador Firefox (Serviço)",
       "categoria": "Erro ou Falha",
       "resol":" "
@@ -524,6 +552,7 @@
       "item": "Serviço não constante do Catálogo de Serviços",
       "categoria": "Instalação"
     },
+
     "62": {
       "titulo": "Impressora - Instalação",
       "resumo": "Impressora - Instalação",
@@ -531,6 +560,7 @@
       "categoria": "Instalação",
       "item": "Digitalização e "
     },
+
     "63": {
       "titulo": "Scanner de Mesa -  instalação",
       "resumo": "Scanner de Mesa - instalação",
@@ -538,13 +568,15 @@
       "categoria": "Instalação",
       "item": "Scanner de Mesa"
     },
+
     "64": {
-      "titulo": "Pje - Erro ao Peticionar",
-      "resumo": "PJe - Erro ao Peticionar",
-      "conteudo": " entra em contato informando que o sistema PJe está com muita lentidão para peticionar.\nAo final o sistema retorna a mensagem de que os documentos estão em assinatura, porém não prossegue.\nMensagem de erro: Erro de Permissão - ARQ-516\nOcorre no 1º e 2º grau.\n\nTeste realizados durante ligação:\nRealizada limpeza de Cookies e Cache.\nRealizado novo acesso com Certificado Digital.\nNavegador utilizado:\n\n",
-      "categoria": "Erro ou Falha (moderada)",
+      "titulo": "Pje - Lentidão ao Peticionar",
+      "resumo": "Pje - Lentidão ao Peticionar",
+      "conteudo": " entra em contato relatando que o sistema Pje apresenta significativa lentidão durante o protocolo de petições.\nInforma que, ao final do procedimento, o sistema exibe a mensagem de que os documentos estão em fase de assinatura, porém o processamento não é concluído.\n\nO problema ocorre no(s) ambiente(s) de 1º Grau e 2º Grau, comprometendo a realização do(s) procedimento(s) de forma adequada e tempestiva no sistema.\nMensagem de erro: Erro de Permissão - ARQ-516\n\nTeste realizados durante atendimento:\nNavegador(es) utilizado(s):\nRealizada limpeza de Cookies e Cache.\nRealizado novo acesso com Certificado Digital.\n\n",
+      "categoria": "Lentidão",
       "item": "Pje (Serviço)"
     },
+
     "65": {
       "titulo": "SISCONDJ - Sem acesso - certificado foi revogado",
       "resumo": "SISCONDJ - Sem acesso - certificado foi revogado",
@@ -553,14 +585,16 @@
       "item": "SISCONDJ (Serviço)",
       "resol":" "
     }, 
+    
     "66": {
-      "titulo": "PJE - CONFIGURAÇÃO DE MFA PARA SERVIDORES/MAGISTRADOS",
-      "resumo": "PJe - Configuração de Acesso QR",
-      "conteudo": " solicita orientações sobre como configurar o autenticador no  celular para acessar o PDPJ com o código.\n\nTestes durante ligação:\nNavegador utilizado:\nLimpeza de cache do navegador.\nRecadastramento do autenticador.\n\n",
+      "titulo": "Pje - CONFIGURAÇÃO DE MFA PARA SERVIDORES/MAGISTRADOS",
+      "resumo": "Pje - Configuração de Acesso QR",
+      "conteudo": " solicita orientações sobre como configurar o autenticador no  celular para acessar o PDPJ com o código.\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s):\nLimpeza de cache do navegador.\nRecadastramento do autenticador.\n\n",
       "categoria": "Dúvida de Negócio",
       "item": "Pje (Serviço)",
       "resol":" "
     },
+
     "67": {
       "titulo": "Computador - Questionamento Técnico",
       "resumo": "Computador - Questionamento Técnico",
@@ -568,31 +602,34 @@
       "categoria": "Questionamento Técnico",
       "item": "Computador"
     }, 
+
     "68": {
-      "titulo": "PJe - Erro ao assinar - Erro de Documento Encriptado no PJe ",
-      "resumo": "PJe - Erro ao assinar",
-      "conteudo": " informa que está tentando protocolar no PJe via PDPJ. Ao informar que no momento da assinatura acontece erro.\n\nOcorre no 1º grau e 2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro: PJe-ASN-011::Ocorreu erro na preparação do documento para assinatura... Código:ASN-017 - Detalhe: Não foi possível configurar o documento PDF para ser assinado: O documento está encriptado e não pode ser processado pelo PJe.\n\nTestes em ligação:\nVersão do PJeOffice: atualizada\nNavegador utilizado:\nValidado o certificado digital",
+      "titulo": "Pje - Erro ao assinar - Erro de Documento Encriptado no Pje ",
+      "resumo": "Pje - Erro ao assinar",
+      "conteudo": " informa que está tentando protocolar no Pje via PDPJ. Ao informar que no momento da assinatura acontece erro.\n\nO problema ocorre no(s) ambiente(s) de 1º Grau e 2º Grau, impossibilitando a assinatura no processo.\n\nMensagem de erro: Pje-ASN-011::Ocorreu erro na preparação do documento para assinatura... Código:ASN-017 - Detalhe: Não foi possível configurar o documento PDF para ser assinado: O documento está encriptado e não pode ser processado pelo Pje.\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s):\nVersão do PjeOffice: atualizada\nValidado o certificado digital",
       "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje ",
-      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PjeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
     },
+
     "69": {
-      "titulo": "PJe - Erro ao anexar arquivo PJC",
-      "resumo": "PJe - Erro ao anexar arquivo PJC",
-      "conteudo": " informa dificuldade para juntar arquivo PJC no PJe. Relata que, ao salvar, o sistema permanece carregando indefinidamente, sem concluir a operação. Informa ainda que anexou os demais documentos, mas não conseguiu verificar se o arquivo PJC foi juntado aos autos, pois precisou atualizar o PJe devido ao mesmo comportamento de salvamento contínuo.\n\nOcorre no 1º grau e 2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro: PJe-ASN-011::Ocorreu erro na preparação do documento para assinatura... Código:ASN-017 - Detalhe: Não foi possível configurar o documento PDF para ser assinado: O documento está encriptado e não pode ser processado pelo PJe.\n\nTestes em ligação:\nVersão do PJeOffice: atualizada\nNavegador utilizado:\nValidado o certificado digital",
+      "titulo": "Pje - Erro ao anexar arquivo PJC",
+      "resumo": "Pje - Erro ao anexar arquivo PJC",
+      "conteudo": " informa dificuldade para juntar arquivo PJC no Pje. Relata que, ao salvar, o sistema permanece carregando indefinidamente, sem concluir a operação. Informa ainda que anexou os demais documentos, mas não conseguiu verificar se o arquivo PJC foi juntado aos autos, pois precisou atualizar o Pje devido ao mesmo comportamento de salvamento contínuo.\n\nO problema ocorre no(s) ambiente(s) de 1º Grau e 2º Grau, impossibilitando a autenticação e o acesso ao sistema.\n\nMensagem de erro: Pje-ASN-011::Ocorreu erro na preparação do documento para assinatura... Código:ASN-017 - Detalhe: Não foi possível configurar o documento PDF para ser assinado: O documento está encriptado e não pode ser processado pelo Pje.\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s):\nVersão do PjeOffice: atualizada\nValidado o certificado digital",
       "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje (Serviço)",
-      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PJeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
+      "resol":"foi feito o/a orientação/acesso remoto e realizado a instalação/configuração do assinador PjeOfficePro, após procedimento o mesmo conseguiu assinar normalmente."
     },
 
     "70": {
-      "titulo": "Chamado de Audiência - Computador não liga",
+      "titulo": "Audiência - Computador não liga",
       "resumo": "Audiência | Sessão | Conciliação - Computador não liga",
-      "conteudo": " solicita a verificação do computador/notebook corporativo, pois máquina não está ligando.\nO(A) servidor(a) realizou a verificação dos cabos de rede e de alimentação elétrica, informando que não foram constatadas irregularidades.\n\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
+      "conteudo": " solicita a verificação do computador/notebook corporativo, pois máquina não está ligando.\nO(A) servidor(a) realizou a verificação dos cabos de rede e de alimentação elétrica, informando que não foram constatadas irregularidades.\n\nO(A) mesmo(a) informar que está em audiência nesse momento.\n\n",
       "categoria": "Erro ou Falha",
       "item": "Audiência | Sessão | ",
       "resol": ""
     },
+    
     "71": {
     "titulo": "VPN - Problema de navegação após conexão",
     "resumo": "VPN - Problema de navegação após conexão",
@@ -602,19 +639,54 @@
     },
 
     "72": {
-    "titulo": "PJe - Editor estruturado - Erro de assinatura",
-    "resumo": "PJe - Editor estruturado - Erro de assinatura",
-    "conteudo": ", informa que não está conseguindo assinar voto no PJe via PDPJ com seu certificado.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
+    "titulo": "Pje - Editor estruturado - Erro de assinatura",
+    "resumo": "Pje - Editor estruturado - Erro de assinatura",
+    "conteudo": ", informa que não está conseguindo assinar voto no Pje via PDPJ com seu certificado.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s):\nVersão do PjeOffice: atualizada\nValidado o certificado digital",
     "categoria": "Erro ou Falha",
     "item": "VPN"
     },
 
     "73": {
-    "titulo": "PJe - Editor estruturado - Erro ao visualizar voto",
-    "resumo": "PJe - Editor estruturado - Erro ao visualizar voto",
-    "conteudo": ", informa que não está conseguindo visualizar a minuta de voto no PJe, aparece apenas tela em branco.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
+    "titulo": "Pje - Editor estruturado - Erro ao visualizar voto",
+    "resumo": "Pje - Editor estruturado - Erro ao visualizar voto",
+    "conteudo": ", informa que não está conseguindo visualizar a minuta de voto no Pje, aparece apenas tela em branco.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTeste(s) durante atendimento:\nNavegador(es) utilizado(s):\nVersão do PjeOffice: atualizada\nValidado o certificado digital",
     "categoria": "Erro ou Falha",
     "item": "VPN"
+    },
+
+    "74": {
+    "titulo": "Pje - Dúvida ao Núcleo Pje",
+    "resumo": "Pje - Dúvida ao Núcleo Pje",
+    "conteudo": ", entra em contato solicitando orientaçõe a cerca do processo. Informaque realizou...\n\nRelata, ainda, está acessando o(s) ambiente(s) de 1º Grau e 2º Grau e solicita esclarecimentos quanto aos procedimentos a serem adotados.\n\nNº do processo:\n\nMensagem de erro:\n\nTestes durante atendimento:\nNavegador(es) utilizado(s):\nVersão do PjeOffice: atualizada\nValidado o certificado digital",
+    "categoria": "Dúvida ao Núcleo Pje",
+    "item": "Pje (Serviço)"
+    },
+
+    "75": {
+    "titulo": "Pje - Erro ao reprocessar o processo",
+    "resumo": "Pje - Erro ao reprocessar o processo",
+    "conteudo": ", informa que está havendo falha ao reprocessar.\n\nRelata, ainda, está acessando o(s) ambiente(s) de 1º Grau e 2º Grau e solicita esclarecimentos quanto aos procedimentos a serem adotados.\n\nNº do processo:\n\nMensagem de erro:\n\nTestes durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\nVersão do PjeOffice: atualizado.\nValidado certificado digital.\n\n",
+    "categoria": "Erro ou Falha (Baixa)",
+    "item": "Pje (Serviço)",
+    "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PjeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente."
+    },
+
+    "76": {
+      "titulo": "Pje - Erro ao acessar",
+      "resumo": "Pje - Erro ao acessar",
+      "conteudo": ", relata não conseguir acessar o sistema Pje por meio da Plataforma Digital do Poder Judiciário (PDPJ) utilizando certificado digital.\n\nO erro ocorre nos ambientes de 1º Grau e 2º Grau, impossibilitando a autenticação e o acesso ao sistema.\n\nMensagem de erro:JBWEB000065: HTTP Status 400.\n\nTestes durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\nVersão do PjeOffice: atualizado.\nValidado certificado digital.\n\n",
+      "categoria": "Sem Acesso",
+      "item": "Pje (Serviço)",
+      "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PjeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente."
+    },
+
+    "77": {
+      "titulo": "Pje - Erro ao acessar 2º grau",
+      "resumo": "Pje - Erro ao acessar 2º grau",
+      "conteudo": ", relata não conseguir acessar o sistema Pje por meio da Plataforma Digital do Poder Judiciário (PDPJ), utilizando certificado digital.\n\nInforma que a ocorrência se restringe ao ambiente de 2º Grau, impossibilitando a consulta e o acompanhamento dos processos no sistema.\n\nMensagem de erro: 'Erro inesperado, por favor tente novamente. Erro: Não existe localização/perfil para o usuário informado. (SJT-API-039)'.\n\nNaturalidade:\nOAB em anexo.\nPrint do erro em anexo.",
+      "categoria": "Sem Acesso",
+      "item": "Pje (Serviço)",
+      "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PjeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente."
     }
 
   },

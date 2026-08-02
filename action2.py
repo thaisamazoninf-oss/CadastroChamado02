@@ -49,17 +49,21 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
 ################################################################
 
     ####### Formatação para adicionar no campo usuário ########
-    #if tipo == "S":
+    #Se o perfil for Servidor e magistrado:
     if tipo in ["S","V"]:
         usuario_formatado = matricula.strip()
-    elif tipo == "AE":
+    #Perfil Advogados
+    elif tipo in ["AE", "A"]:
         usuario_formatado = f"{nome.strip().upper()} OAB {estado.strip().upper()} nº:{oab.strip()} - D"
+    #Perfil Público em geral
     elif tipo == "E":
         usuario_formatado = f"{nome.strip().upper()} CPF - {cpf.strip()}"
+    #Perfil usuário não idendificado
     elif tipo == "Q":
         usuario_formatado = "USUARIO NAO REGISTRADO(Usuário Não Registrado)"
-    elif tipo == "A":
-        usuario_formatado = f"OAB:{oab.strip()}"
+    """
+    #elif tipo == "A":
+    #    usuario_formatado = f"OAB:{oab.strip()}"
 
     ####### Analisar Esse trecho ########
     if tipo == "A":
@@ -73,7 +77,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             usuario_formatado = infoOAB
         except:
             usuario_formatado = "Erro ao copiar OAB"
-    
+    """
     ####### Modos de Entrada ########     
     #Entrada de assuntos
     entrada_assunto = [k for k,v in assuntos.items() if v['titulo'] == assunto_titulo][0]
@@ -96,7 +100,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     
 
     ######## Número de contato ######## 
-    if tipo in ["A", "AE", "S","V", "E"]:
+    if tipo in ["AE", "S","V", "E"]:
         print("\nNúmero de contato")
         microsip = f"{contato}"
     else:
@@ -113,7 +117,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     item = f"{assuntos[entrada_assunto]['item']}"
 
 
-    if tipo in ["A", "E", "AE"]:
+    if tipo in ["E", "AE"]:
         print("\nClicando no campo usuário")
         pyautogui.rightClick(*COORDS["campo_usuario"])
         time.sleep(3)
@@ -184,12 +188,12 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         pyautogui.hotkey("ctrl", "v")
         
     #------------------ Adicionando Seção ---------------------#
-    if tipo in ["A", "AE", "E"]:
+    if tipo in ["AE", "E"]:
         print("\nClicando no campo seção")
         time.sleep(3)
         pyautogui.click(*COORDS["clique_secao"])
         
-        if tipo in ["A","AE"]:
+        if tipo == "AE":
             print("\nAdicionando nome advogado")
             time.sleep(2)
             pyautogui.write('Advogado')
@@ -204,7 +208,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
         pyautogui.press("down")
         pyautogui.press("enter")
 
-    tabs = 4 if tipo in ["A", "AE", "E"] else 7
+    tabs = 4 if tipo in ["AE", "E"] else 7
     for _ in range(tabs):
         pyautogui.press("tab")
         time.sleep(0.1)
@@ -220,8 +224,8 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
 
 #------------------ Adicionando Descrição ---------------------#
 
-    if entrada_assunto in ["2","5", "6","7","9","10","11","15","16","17","18","19", "21","22","25","27","29","32","36","38","39","40","42","46","47","48","51","53","58","60","61","62","63","65","66","70", "71", "72","73"]:
-        if tipo in ["A", "AE", "E"]:
+    if entrada_assunto in ["2","5", "6","7","9","10","11","15","16","17","18","19", "21","22","25","27","29","32","36","38","39","40","42","46","47","48","51","53","58","60","61","62","63","65","66","70", "71", "72","73","74","75","76"]:
+        if tipo in ["AE", "E"]:
             print("\nAdicionando descrição")
             colar_texto(texto)
             #pyperclip.copy(texto)
@@ -350,7 +354,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
     
     #---------- Preenchimento do e-mail --------------#
 
-    if tipo in ["A", "E", "AE"]:
+    if tipo in ["E", "AE"]:
         print("\nPreenchendo e-mail/OAB/CPF")
         time.sleep(4)
         # 3x TAb 
@@ -380,7 +384,7 @@ def preencher_assyst(tipo, nome, oab, estado, cpf, email, matricula, assunto_tit
             #pyautogui.scroll(950)
             print("concluido com sucesso!")
 
-    if tipo in ["A", "AE"]:
+    if tipo == "AE":
         time.sleep(0.5)
         pyautogui.press("tab")
         pyperclip.copy(oab.strip())
