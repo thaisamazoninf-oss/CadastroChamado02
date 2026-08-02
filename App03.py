@@ -356,7 +356,7 @@ class Aplicacao:
 def main():
     root = tk.Tk()
     root.title("Cadastro de Usuário Assyst")
-    root.geometry("515x750")
+    root.geometry("516x750")
 
     # Frame principal
     container = tk.Frame(root)
