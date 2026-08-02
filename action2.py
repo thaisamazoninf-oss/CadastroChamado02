@@ -11,7 +11,7 @@ COORDS = {
     #"selecionar_usuario_anonimo": (593, 369),
     #"clicar_no_campo_nome": (899, 487),
     #"clique_ok": (970, 532),
-    #"Confirme_secao": (364, 452),ss
+    #"Confirme_secao": (364, 452),
     #"selecionar_item": (842, 730)
 }
 

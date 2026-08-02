@@ -86,7 +86,7 @@
       "resol": "Cobrança de Evento - XXXXXX - S. SUSTENT PJE-JT/Field Services 🖥️"
     },
     "9": {
-      "titulo": "Chamado de Audiência - Falha na aplicação Zoom",
+      "titulo": "Chamado de Audiência",
       "resumo": "Audiência | Sessão | Conciliação",
       "conteudo": " informa que não está conseguindo acessar a aplicação Zoom, pois está apresentando problemas.\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
       "categoria": "erro",
@@ -143,7 +143,6 @@
       "item": "Google Drive (Desktop) (Serviço)",
       "resol":" foi feito o acesso remoto e realizado o acesso no Google Drive. Após procedimento, o mesmo conseguiu acessar normalmente."
     },
-
     "16": {
       "titulo": "SISCONDJ - Erro de procedimento",
       "resumo": "SISCONDJ - Erro de procedimento",
@@ -153,7 +152,6 @@
       "resol":"Orientado(a) a verificar andamento processual com a XXª Vara Trabalhista através do número: ",
       "atribuir":"S. SUSTENT PJE-JT"
     },
-
     "17": {
       "titulo": "PJe - Sem Acesso",
       "resumo": "PJE - Sem acesso",
@@ -162,7 +160,6 @@
       "item": "Pje (Serviço)",
       "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PJeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente. "
     },
-    
     "18": {
       "titulo": "Intranet - Sem acesso",
       "resumo": "Intranet - Sem acesso",
@@ -171,7 +168,6 @@
       "item": "Intranet",
       "resol":" "
     },
-
     "19": {
       "titulo": "Impressora - Não Imprime",
       "resumo": "Impressora - Não Imprime",
@@ -179,7 +175,6 @@
       "categoria": "Não imprime",
       "item": "Digitalização e "
     },
-
     "20": {
       "titulo": "Malote Digital - Sem acesso",
       "resumo": "Malote Digital - Sem acesso",
@@ -188,7 +183,6 @@
       "item": "Malote Digital (Serviço)",
       "resol":" "
     },
-
     "21": {
       "titulo": "Extensões navegador Firefox - Instalação",
       "resumo": "Extensões navegador Firefox - Instalação",
@@ -197,7 +191,6 @@
       "item": "Extensões navegador Firefox (Serviço)",
       "resol":" "
     },
-    
     "22": {
       "titulo": "Ramal - Redirecionamento de ramal",
       "resumo": "Ramal - Redirecionamento de ramal",
@@ -206,7 +199,6 @@
       "item": "Ramal",
       "resol":" "
     },
-
     "23": {
       "titulo": "SISCONDJ - Alteração de Usuário",
       "resumo": "SISCONDJ - Alteração de Usuário",
@@ -215,7 +207,6 @@
       "item": "SISCONDJ (Serviço)",
       "resol":" "
     },
-
     "24": {
       "titulo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
       "resumo": "TrtCloud Gmail - Sem Acesso Codigo segurança",
@@ -224,7 +215,6 @@
       "item": "TRTCloud - Gmail (Serviço)",
       "resol":" "
     },
-
     "25": {
       "titulo": "Computador - Lentidão",
       "resumo": "Computador - Lentidão",
@@ -232,7 +222,6 @@
       "categoria": "Lentidão",
       "item": "Computador"
     },
-
     "26": {
       "titulo": "PJE - Erro ao anexar arquivos",
       "resumo": "PJE - Erro ao anexar arquivos",
@@ -241,7 +230,6 @@
       "item": "Pje (Serviço)",
       "resol":" "
     },
-    
     "27": {
       "titulo": "Windows 11 - atualização",
       "resumo": "Windows 11 - atualização",
@@ -250,7 +238,6 @@
       "item": "Windows 11 (Serviço)",
       "resol":" "
     },
-    
     "28": {
       "titulo": "Cadastros de dados bancarios - Sem acesso",
       "resumo": "Cadastros de dados bancarios - Sem acesso",
@@ -259,7 +246,6 @@
       "item": "Cadastro de Dados Bancários de Advogados (Serviço)",
       "resol":" "
     },
-
     "29": {
       "titulo": "Acervo Digital - Erro Forbidden",
       "resumo": "Acervo Digital - Erro Forbidden",
@@ -268,7 +254,6 @@
       "item": "Acervo Digital",
       "resol":" "
     },
-
     "30": {
       "titulo": "Intranet - Reset do autenticador",
       "resumo": "Autenticador TRT2 - Intranet - Reset",
@@ -277,7 +262,6 @@
       "item": "Autenticador TRT2 (Serviço)",
       "resol":" "
     },
-
     "31": {
       "titulo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
       "resumo": "TrtCloud Gmail - Reset/Desbloqueio Senha",
@@ -286,7 +270,6 @@
       "item": "TRTCloud - Acesso à conta",
       "resol":" "
     },
-
     "32": {
       "titulo": "Monitor - Não liga",
       "resumo": "Monitor - Não liga",
@@ -436,7 +419,6 @@
       "categoria": "Sem Acesso",
       "resol": ""
     },
-    
     "49": {
       "titulo": "PJe - Alteração do e-mail",
       "resumo": "PJe - Alteração do e-mail",
@@ -445,7 +427,6 @@
       "categoria": "Alteração de Usuário",
       "resol": ""
     },
-
     "50": {
       "titulo": "Extensões navegador Firefox - Erro na extensão +PJe",
       "resumo": "Extensões navegador Firefox - Erro na extensão +PJe",
@@ -612,7 +593,6 @@
       "item": "Audiência | Sessão | ",
       "resol": ""
     },
-
     "71": {
     "titulo": "VPN - Problema de navegação após conexão",
     "resumo": "VPN - Problema de navegação após conexão",
@@ -635,24 +615,6 @@
     "conteudo": ", informa que não está conseguindo visualizar a minuta de voto no PJe, aparece apenas tela em branco.\n\nOcorre no  2º grau\nOcorre somente 1º/2º grau.\n\nMensagem de erro:\n\nTestes em ligação:\n—Versão do PJeOffice: atualizada\n—Navegador utilizado:\n—Validado o certificado digital",
     "categoria": "Erro ou Falha",
     "item": "VPN"
-    }, 
-
-    "74": {
-    "titulo": "PJe - Alteração de perfil",
-    "resumo": "PJe - Alteração de perfil",
-    "conteudo": ", entrou em contato requerendo a alteração de seu perfil de Jus Postulandi para Advogado(a) no 1º e 2º graus de jurisdição.\nNaturalidade:\nOAB em anexo.\n\n",
-    "item": "Pje (Serviço)",
-    "categoria": "Alteração de Usuário",
-    "resol": ""
-    },
-
-    "75": {
-      "titulo": "Chamado de Audiência - Falha no microfone",
-      "resumo": "Audiência | Sessão | Conciliação - Falha no microfone",
-      "conteudo": " solicita a verificação do microfone da sala de audiência, pois o dispositivo não está captando audio.\nO(A) servidor(a) realizou a verificação dos cabos, informando que não foram constatadas irregularidades.\n\nO(A) mesmo(a) informar que está em audiência nesse momento\n\n",
-      "categoria": "Erro ou Falha",
-      "item": "Audiência | Sessão | ",
-      "resol": ""
     }
 
   },
