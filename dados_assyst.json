@@ -684,7 +684,7 @@
       "titulo": "Pje - Erro ao acessar 2º grau",
       "resumo": "Pje - Erro ao acessar 2º grau",
       "conteudo": ", relata não conseguir acessar o sistema Pje por meio da Plataforma Digital do Poder Judiciário (PDPJ), utilizando certificado digital.\n\nInforma que a ocorrência se restringe ao ambiente de 2º Grau, impossibilitando a consulta e o acompanhamento dos processos no sistema.\n\nMensagem de erro: 'Erro inesperado, por favor tente novamente. Erro: Não existe localização/perfil para o usuário informado. (SJT-API-039)'.\n\nNaturalidade:\nOAB em anexo.\nPrint do erro em anexo.",
-      "categoria": "Sem Acesso",
+      "categoria": "Erro ou Falha (Moderada)",
       "item": "Pje (Serviço)",
       "resol":" foi orientadx sobre/feito o acesso remoto e realizado a instalação do PjeOfficePro e configuração do certificado. Após procedimento, oa mesmx conseguiu acessar normalmente."
     }
