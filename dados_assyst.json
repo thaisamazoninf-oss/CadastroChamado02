@@ -692,7 +692,7 @@
     "78": {
       "titulo": "SISCONDJ – Atraso no recebimento do código de autenticação",
       "resumo": "SISCONDJ – Atraso no recebimento do código de autenticação",
-      "conteudo": ", relata não está recebendo o token enviado por e-mail, impossibilitando o acesso ao sistema",
+      "conteudo": ", relata que não está recebendo o token encaminhado por e-mail, o que está impossibilitando o acesso ao sistema.",
       "categoria": "Erro ou Falha",
       "item": "SISCONDJ (Serviço)",
       "resol":" "
@@ -701,7 +701,7 @@
     "79": {
       "titulo": "VPN – Atraso no recebimento do código de autenticação",
       "resumo": "VPN – Atraso no recebimento do código de autenticação",
-      "conteudo": ", relata não está recebendo o código enviado por e-mail, impossibilitando o acesso ao sistema",
+      "conteudo": ", relata que não está recebendo o código encaminhado por e-mail, o que está impossibilitando o acesso ao sistema.",
       "categoria": "Erro ou Falha",
       "item": "VPN (Serviço)",
       "resol":" "
