@@ -672,7 +672,7 @@
     },
 
     "76": {
-      "titulo": "Pje - Erro ao acessar",
+      "titulo": "Pje - Erro ao acessar - Erro 400",
       "resumo": "Pje - Erro ao acessar",
       "conteudo": ", relata não conseguir acessar o sistema Pje por meio da Plataforma Digital do Poder Judiciário (PDPJ) utilizando certificado digital.\n\nO erro ocorre nos ambientes de 1º Grau e 2º Grau, impossibilitando a autenticação e o acesso ao sistema.\n\nMensagem de erro:JBWEB000065: HTTP Status 400.\n\nTestes durante atendimento:\nNavegador(es) utilizado(s): Mozilla.\nVersão do PjeOffice: atualizado.\nValidado certificado digital.\n\n",
       "categoria": "Sem Acesso",
@@ -713,6 +713,15 @@
       "conteudo": ", relata que não está conseguindo cumprir determinação, ao tentar registrar a ordem, surge uma  mensagem de erro.\n\nMensagem de erro: O réu informado não é parte do processo",
       "categoria": "Erro ou Falha",
       "item": "SISBAJUD (Serviço)",
+      "resol":" "
+    },
+
+    "81": {
+      "titulo": "Pje - Alteração do perfil",
+      "resumo": "Pje - Alteração do perfil",
+      "conteudo": ", entrou em contato solicitando atualização do seu perfil no Pje 1º e 2º Grau de ' ' para 'advogado'.\nNaturalidade:\nOAB em anexo.\n\n",
+      "categoria": "Alteração de Usuário",
+      "item": "Pje (Serviço)",
       "resol":" "
     }
 
