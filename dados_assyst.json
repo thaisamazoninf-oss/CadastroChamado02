@@ -705,6 +705,15 @@
       "categoria": "Erro ou Falha",
       "item": "VPN (Serviço)",
       "resol":" "
+    },
+
+    "80": {
+      "titulo": "SISBAJUD - O réu informado não é parte do processo",
+      "resumo": "SISBAJUD - O réu informado não é parte do processo",
+      "conteudo": ", relata que não está conseguindo cumprir determinação, ao tentar registrar a ordem, surge uma  mensagem de erro.\n\nMensagem de erro: O réu informado não é parte do processo",
+      "categoria": "Erro ou Falha",
+      "item": "SISBAJUD (Serviço)",
+      "resol":" "
     }
 
   },
